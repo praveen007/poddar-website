@@ -1,0 +1,107 @@
+.products-tabs-wrapper {
+  .nav-tabs {
+    display: flex;
+    border-bottom: 2px solid #eee;
+    .nav-item {
+      margin-bottom: -2px;
+      .nav-link {
+        border: none;
+        background: none;
+        color: #333;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        &.active {
+          border-bottom: 2px solid #d32f2f;
+          color: #d32f2f;
+          background: #fff;
+        }
+        h3 {
+          margin: 0;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin-top: 2rem;
+    .tab-pane {
+      display: none;
+      &.active.show {
+        display: block;
+      }
+      .card-header {
+        background: none;
+        border: none;
+        h4 {
+          font-size: 1.5rem;
+          margin: 0 0 1rem 0;
+        }
+      }
+      .card-body {
+        .service-content {
+          .contents-wrap {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            .tab-img {
+              width: 180px;
+              height: auto;
+              border-radius: 8px;
+              box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            }
+            .contents-bottom {
+              .contents {
+                margin-bottom: 1rem;
+              }
+              .btn-wrapper {
+                .btn-danger {
+                  background: #d32f2f;
+                  color: #fff;
+                  border: none;
+                  padding: 0.75rem 1.5rem;
+                  border-radius: 4px;
+                  text-decoration: none;
+                  font-weight: 600;
+                  transition: background 0.2s;
+                  &:hover {
+                    background: #b71c1c;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .products-tabs-wrapper {
+    .nav-tabs {
+      flex-direction: column;
+      .nav-item {
+        .nav-link {
+          padding: 0.75rem 1rem;
+        }
+      }
+    }
+    .tab-content {
+      .tab-pane {
+        .card-body {
+          .service-content {
+            .contents-wrap {
+              flex-direction: column;
+              gap: 1rem;
+              .tab-img {
+                width: 100%;
+                max-width: 320px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,133 @@
+.innovations-swiper-wrapper {
+  width: 100%;
+  min-height: 200px;
+  background: #eff8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.latest_section_heading {
+  color: #00aeef;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.innovations-swiper-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innovations-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+  width: 100%;
+  min-height: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  display: none;
+  transition: opacity 0.5s;
+}
+.innovations-card.active {
+  opacity: 1;
+  z-index: 2;
+  display: block;
+}
+.event-card-img img {
+  width: 100%;
+  max-width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.news-event-subInfo {
+  margin-bottom: 0.5rem;
+}
+.news-eventDate {
+  color: #888;
+  font-size: 0.95rem;
+}
+.news-event-desc-header h5 {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0 0;
+}
+.innovations-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.innovations-nav.prev {
+  left: 8px;
+}
+.innovations-nav.next {
+  right: 8px;
+}
+.innovations-nav:hover {
+  background: rgba(0,0,0,0.5);
+}
+.innovations-dots {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+.innovations-dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s;
+}
+.innovations-dots button.active {
+  opacity: 1;
+  background: #00aeef;
+}
+@media (max-width: 600px) {
+  .innovations-swiper-container {
+    max-width: 98vw;
+    min-height: 260px;
+  }
+  .innovations-card {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    min-height: 200px;
+  }
+  .event-card-img img {
+    height: 120px;
+    max-width: 98vw;
+  }
+} 

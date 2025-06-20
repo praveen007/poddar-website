@@ -1,0 +1,23 @@
+<div class="testimonial-swiper-wrapper">
+  <div class="container">
+    <h2 class="testimonial_section_heading">What Ashirvad Means To</h2>
+    <div class="testimonial-swiper-container">
+      <div class="testimonial-card card" *ngFor="let testimonial of testimonials; let i = index" [class.active]="i === currentIndex" [style.display]="i === currentIndex ? 'block' : 'none'">
+        <div class="media">
+          <div class="img__wrapper">
+            <img [src]="testimonial.img" [alt]="testimonial.name" class="img-fluid">
+          </div>
+          <div class="media-body">
+            <h3 class="mt-0">{{ testimonial.name }}</h3>
+            <p class="card-text">{{ testimonial.text }}</p>
+          </div>
+        </div>
+      </div>
+      <button class="testimonial-nav prev" (click)="prev()" aria-label="Previous testimonial">&#10094;</button>
+      <button class="testimonial-nav next" (click)="next()" aria-label="Next testimonial">&#10095;</button>
+      <div class="testimonial-dots">
+        <button *ngFor="let testimonial of testimonials; let i = index" [class.active]="i === currentIndex" (click)="goTo(i)" aria-label="Go to testimonial"></button>
+      </div>
+    </div>
+  </div>
+</div> 

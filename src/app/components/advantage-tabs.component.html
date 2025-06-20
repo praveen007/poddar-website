@@ -1,0 +1,17 @@
+<div class="advantage-tabs-wrapper">
+  <div class="advantage-tabs-container">
+    <div class="advantage-tabs-list">
+      <button *ngFor="let tab of tabs; let i = index"
+              class="advantage-tab-btn"
+              [class.active]="i === activeTab"
+              (click)="setActiveTab(i)">
+        <img [src]="tab.icon" [alt]="tab.title" class="advantage-tab-icon">
+        <span class="advantage-tab-title">{{ tab.title }}</span>
+      </button>
+    </div>
+    <div class="advantage-tab-content">
+      <h3>{{ tabs[activeTab].title }}</h3>
+      <p>{{ tabs[activeTab].content }}</p>
+    </div>
+  </div>
+</div> 

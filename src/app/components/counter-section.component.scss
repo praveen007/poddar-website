@@ -1,0 +1,51 @@
+.counter-section-wrapper {
+  width: 100%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.counter-list {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 140px;
+}
+
+.counter-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d32f2f;
+  margin-bottom: 0.5rem;
+}
+
+.counter-label {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .counter-list {
+    gap: 1.5rem;
+  }
+  .counter-item {
+    min-width: 100px;
+  }
+  .counter-value {
+    font-size: 1.5rem;
+  }
+  .counter-label {
+    font-size: 0.95rem;
+  }
+} 

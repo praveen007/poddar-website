@@ -1,0 +1,8 @@
+<div class="counter-section-wrapper">
+  <div class="counter-list">
+    <div class="counter-item" *ngFor="let counter of counters">
+      <div class="counter-value">{{ counter.display | number }}</div>
+      <div class="counter-label">{{ counter.label }}</div>
+    </div>
+  </div>
+</div> 

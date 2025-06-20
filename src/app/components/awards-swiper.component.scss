@@ -1,0 +1,147 @@
+.awards-swiper-wrapper {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 2rem 0;
+  overflow-x: auto;
+}
+
+.awards-swiper-list {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.awards-swiper-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  min-width: 260px;
+  max-width: 320px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.awards-swiper-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.13);
+}
+
+.awards-swiper-img-wrap {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.awards-swiper-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.awards-swiper-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #d32f2f;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.awards-swiper-desc {
+  font-size: 0.98rem;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .awards-swiper-list {
+    gap: 1rem;
+  }
+  .awards-swiper-card {
+    min-width: 180px;
+    max-width: 220px;
+    padding: 1rem 0.5rem;
+  }
+  .awards-swiper-img-wrap {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.awards-swiper-custom-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.swiper-nav {
+  background: #fff;
+  border: 1px solid #d32f2f;
+  color: #d32f2f;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.swiper-nav:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.swiper-nav:not(:disabled):hover {
+  background: #d32f2f;
+  color: #fff;
+}
+
+.awards-swiper-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #eee;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dot.active {
+  background: #d32f2f;
+}
+
+@media (max-width: 600px) {
+  .awards-swiper-custom-wrapper {
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+  .awards-swiper-card {
+    min-width: 180px;
+    max-width: 220px;
+    padding: 1rem 0.5rem;
+  }
+  .awards-swiper-img-wrap {
+    width: 60px;
+    height: 60px;
+  }
+  .swiper-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+  }
+} 

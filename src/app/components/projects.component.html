@@ -1,0 +1,21 @@
+<div class="projects-wrapper">
+  <div class="container">
+    <h2 class="blogs_section_heading">Our Prestigious Projects</h2>
+    <div class="projects-grid">
+      <div class="projects-card" *ngFor="let project of projects">
+        <div class="projects_image">
+          <a [href]="project.link" target="_blank" rel="noopener">
+            <img [src]="project.img" [alt]="project.title">
+          </a>
+        </div>
+        <div class="projects_body">
+          <h3 class="p_title">{{ project.title }}</h3>
+          <p class="p_description">{{ project.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="btn-wrapper">
+      <a class="btn-danger arrow" href="https://www.ashirvad.com/case-study/" target="_blank" rel="noopener">View More</a>
+    </div>
+  </div>
+</div> 

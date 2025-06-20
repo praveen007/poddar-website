@@ -1,0 +1,986 @@
+<div class="navHeader__itemWrapper">
+    <div class="container">
+     <ul class="navHeader__list resp">
+      <li class="navHeader__itemList">
+       <a class="static-search-wrapper" href="https://www.ashirvad.com/search/">
+        <img src="https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/search-sm.svg">
+        <input placeholder=" Search" readonly="" type="text">
+       </a>
+      </li>
+      <!-- What's New starts -->
+      <li class="navHeader__itemList has__navList hide-sub-nav">
+       <a class="navHeader--title whats-new" href="javascript:void(0)">
+        What's New
+       </a>
+       <div class="dropdown__wrapper">
+        <div class="sm-backArrow">
+         <img alt="back-arrow" src="https://localhost/cms/cms-ashirvad/wp-content/themes/ashirvad/assets/main/svgs/arrow-right-red.svg">
+         <span>
+          Back
+         </span>
+        </div>
+        <ul class="navHeader__innerList">
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/water-storage-tank/">
+           Ashirvad Tanks
+          </a>
+         </li>
+        </ul>
+       </div>
+      </li>
+      <!-- What's New Ends -->
+      <!-- active -->
+      <li class="navHeader__itemList has__navList">
+       <a class="navHeader--title" href="javascript:void(0)">
+        About us
+       </a>
+       <div class="dropdown__wrapper">
+        <div class="sm-backArrow">
+         <img alt="back-arrow" src="https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/arrow-right-red.svg">
+         <span>
+          Back
+         </span>
+        </div>
+        <ul class="navHeader__innerList">
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/who-we-are/">
+           Who we are
+          </a>
+         </li>
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/about-us-why-ashirvad/">
+           Why Ashirvad
+          </a>
+         </li>
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/partners-and-growth/">
+           Our Partners
+          </a>
+         </li>
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/about-award-achievement/">
+           Our Accomplishments
+          </a>
+         </li>
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/our-leadership/">
+           Our Leadership
+          </a>
+         </li>
+        </ul>
+       </div>
+      </li>
+      <li class="navHeader__itemList has__navList w-nav">
+       <a class="navHeader--title" href="javascript:void(0)">
+        Products and Solutions
+        <img class="down-arrow-menu" src="https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/dropdown.svg">
+       </a>
+       <div class="dropdown__wrapper dropdown-height">
+        <div class="sm-backArrow">
+         <img alt="back-arrow" src="https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/arrow-right-red.svg">
+         <span>
+          Back
+         </span>
+        </div>
+        <div class="row height-fix">
+         <div class="navHeader__innerList col-md-4">
+          <div class="accordion" id="accordionExample">
+           <div class="card">
+            <div class="card-header" id="heading1">
+             <h2 class="mb-0">
+              <button aria-controls="collapse1" aria-expanded="false" class="btn btn-link btn-block text-left collapsed" data-target="#collapse1" data-toggle="collapse" type="button">
+               Plumbing Pipes and Fittings
+              </button>
+             </h2>
+            </div>
+            <div aria-labelledby="heading1" class="collapse" data-parent="#accordionExample" id="collapse1">
+             <div class="card-body">
+              <h6 class="list-heading">
+               CPVC Range (Hot and Cold)
+              </h6>
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/cpvc-pipes-fittings/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/CPVC_FlowGuard-Plus_Cluster-1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad FlowGuard-Plus® CPVC
+                 </p>
+                </div>
+               </a>
+              </div>
+              <h6 class="list-heading">
+               UPVC Range (Potable Cold Water)
+              </h6>
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-upvc-aqualife-plumbing-system/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2024/09/Aqualife-Plus_Cluster_v1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad uPVC Aqualife+ Plumbing System
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/upvc-aqualife-plumbing-system/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Aqualife_Cluster.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad uPVC Aqualife Plumbing System
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-upvc-aqualife-reclaim/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/3.-Ashirvad-uPVC-Aqualife®-Reclaim.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad uPVC Aqualife Reclaim Plumbing System
+                 </p>
+                </div>
+               </a>
+              </div>
+              <h6 class="list-heading">
+               SWR Range (Soil, Waste and Rainwater)
+              </h6>
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/swr-pipes-fittings/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/SWR-Cluster.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  SWR Plumbing System
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/low-noise-swr-pipes-fittings/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Silent-SWR-Pipe-cluster-1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad Low Noise SWR
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-active-drainage-ventilation-system/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/6.-Studor-P.A.P.A.-System.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad Active Drainage Ventilation System
+                 </p>
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header" id="heading2">
+             <h2 class="mb-0">
+              <button aria-controls="collapse2" aria-expanded="false" class="btn btn-link btn-block text-left collapsed" data-target="#collapse2" data-toggle="collapse" type="button">
+               Underground Drainage
+              </button>
+             </h2>
+            </div>
+            <div aria-labelledby="heading2" class="collapse" data-parent="#accordionExample" id="collapse2">
+             <div class="card-body">
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/underground-drainage-pipes-systems/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/UGD-PIpe-Cluster.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad UGD Solutions
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/manholes-inspection-chambers/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/8.-Manholes-_-Inspection-Chambers.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Manholes &amp; Inspection Chambers
+                 </p>
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header" id="heading3">
+             <h2 class="mb-0">
+              <button aria-controls="collapse3" aria-expanded="false" class="btn btn-link btn-block text-left collapsed" data-target="#collapse3" data-toggle="collapse" type="button">
+               Agriculture Pipes and Fittings
+              </button>
+             </h2>
+            </div>
+            <div aria-labelledby="heading3" class="collapse" data-parent="#accordionExample" id="collapse3">
+             <div class="card-body">
+              <h6 class="list-heading">
+               Water Extraction Solutions
+              </h6>
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/upvc-column-pipes/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2023/04/Column-Pipe-Cluster_v1-1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Column Pipes
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/upvc-casing-pipes/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Blue-Casing_v1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Casing Pipes
+                 </p>
+                </div>
+               </a>
+              </div>
+              <h6 class="list-heading">
+               Water Transmission Solutions
+              </h6>
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/hdpe-pipes/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/HDPE_SWASTH_Cluster_V1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  HDPE Pipes
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/agri-pipes-fittings/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/AGRI-Pipe-Cluster_V1-1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Agri Pipes
+                 </p>
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header" id="heading4">
+             <h2 class="mb-0">
+              <button aria-controls="collapse4" aria-expanded="false" class="btn btn-link btn-block text-left collapsed" data-target="#collapse4" data-toggle="collapse" type="button">
+               Industrial Solutions
+              </button>
+             </h2>
+            </div>
+            <div aria-labelledby="heading4" class="collapse" data-parent="#accordionExample" id="collapse4">
+             <div class="card-body">
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/upvc-korrosafe-pipes-and-fittings/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Industrial-Pipe-Image_new.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  uPVC Korrosafe Pipes and Fittings
+                 </p>
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header" id="heading5">
+             <h2 class="mb-0">
+              <button aria-controls="collapse5" aria-expanded="false" class="btn btn-link btn-block text-left collapsed" data-target="#collapse5" data-toggle="collapse" type="button">
+               Fire Protection System
+              </button>
+             </h2>
+            </div>
+            <div aria-labelledby="heading5" class="collapse" data-parent="#accordionExample" id="collapse5">
+             <div class="card-body">
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/blazemaster-fire-protection-systems/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/BlazeMaster-Pipe-Image-1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  BlazeMaster® Fire Protection System
+                 </p>
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header" id="heading6">
+             <h2 class="mb-0">
+              <button aria-controls="collapse6" aria-expanded="false" class="btn btn-link btn-block text-left collapsed" data-target="#collapse6" data-toggle="collapse" type="button">
+               Waste Water Management
+              </button>
+             </h2>
+            </div>
+            <div aria-labelledby="heading6" class="collapse" data-parent="#accordionExample" id="collapse6">
+             <div class="card-body">
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/grease-interceptors/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/10.-Ashirvad_Grease-Solid-Interceptors.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Grease and Solid Interceptors
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-sewage-treatment-plant/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2024/06/STP.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad Sewage Treatment Plant
+                 </p>
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header" id="heading7">
+             <h2 class="mb-0">
+              <button aria-controls="collapse7" aria-expanded="false" class="btn btn-link btn-block text-left collapsed" data-target="#collapse7" data-toggle="collapse" type="button">
+               Infrastructure Solutions
+              </button>
+             </h2>
+            </div>
+            <div aria-labelledby="heading7" class="collapse" data-parent="#accordionExample" id="collapse7">
+             <div class="card-body">
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/hdpe-pipes/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/HDPE_SWASTH_Cluster_V1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  HDPE Pipes
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/aliaxis-electrofusion-fittings/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Electrofusion_fittings.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Electrofusion Fittings
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/dynaflo-pvc-o-pipes/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/OPVC-Pipe-Cluster-Image_Edit.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Dynaflo PVC-O Pipes
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/akasison-siphonic-roof-drainage-system/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2024/09/Akasison-XL-1.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Akasison Siphonic Roof Drainage System
+                 </p>
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header" id="heading8">
+             <h2 class="mb-0">
+              <button aria-controls="collapse8" aria-expanded="false" class="btn btn-link btn-block text-left collapsed" data-target="#collapse8" data-toggle="collapse" type="button">
+               Water Tanks &amp; Y Strainer
+              </button>
+             </h2>
+            </div>
+            <div aria-labelledby="heading8" class="collapse" data-parent="#accordionExample" id="collapse8">
+             <div class="card-body">
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-water-storage-tanks/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/WST_PURE_Yellow-Tank_Blue-Tape.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Water Storage Tanks
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/product/y-strainer/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Ashirvad_uPVC-Aqualife_Y-Strainer.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Y- Strainer
+                 </p>
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header" id="heading9">
+             <h2 class="mb-0">
+              <button aria-controls="collapse9" aria-expanded="false" class="btn btn-link btn-block text-left collapsed" data-target="#collapse9" data-toggle="collapse" type="button">
+               Bath and Kitchen Solutions
+              </button>
+             </h2>
+            </div>
+            <div aria-labelledby="heading9" class="collapse" data-parent="#accordionExample" id="collapse9">
+             <div class="card-body">
+              <div class="row w-100">
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-slimpro-concealed-cistern/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2025/05/Slimpro_3.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad Slimpro Concealed Cistern
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/concealed-valves-diverters/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Concealed-Valve-Diverter-For-Page.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Concealed Valves and Diverters
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/wc-pan-connectors/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/12.-WC-PAN-Connectors.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  WC PAN Connectors
+                 </p>
+                </div>
+               </a>
+               <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-waste-outlets-traps/">
+                <div class="image-container">
+                 <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Waste-Outlet-Traps.png">
+                </div>
+                <div class="image-detail">
+                 <p>
+                  Ashirvad Waste Outlets &amp; Traps
+                 </p>
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div>
+           <ul class="unorderlist">
+            <li class="list-item myBtn" id="hover-1">
+             Plumbing Pipes and Fittings
+            </li>
+            <li class="list-item myBtn" id="hover-2">
+             Underground Drainage
+            </li>
+            <li class="list-item myBtn" id="hover-3">
+             Agriculture Pipes and Fittings
+            </li>
+            <li class="list-item myBtn" id="hover-4">
+             Industrial Solutions
+            </li>
+            <li class="list-item myBtn" id="hover-5">
+             Fire Protection System
+            </li>
+            <li class="list-item myBtn" id="hover-6">
+             Waste Water Management
+            </li>
+            <li class="list-item myBtn" id="hover-7">
+             Infrastructure Solutions
+            </li>
+            <li class="list-item myBtn" id="hover-8">
+             Water Tanks &amp; Y Strainer
+            </li>
+            <li class="list-item myBtn" id="hover-9">
+             Bath and Kitchen Solutions
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="hover-items-container hoverCards col-md-8">
+          <div class="hover-container" id="box-1" style="display: block;">
+           <h6 class="list-heading">
+            CPVC Range (Hot and Cold)
+           </h6>
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/cpvc-pipes-fittings/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/CPVC_FlowGuard-Plus_Cluster-1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad FlowGuard-Plus® CPVC
+              </p>
+             </div>
+            </a>
+           </div>
+           <h6 class="list-heading">
+            UPVC Range (Potable Cold Water)
+           </h6>
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-upvc-aqualife-plumbing-system/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2024/09/Aqualife-Plus_Cluster_v1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad uPVC Aqualife+ Plumbing System
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/upvc-aqualife-plumbing-system/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Aqualife_Cluster.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad uPVC Aqualife Plumbing System
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-upvc-aqualife-reclaim/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/3.-Ashirvad-uPVC-Aqualife®-Reclaim.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad uPVC Aqualife Reclaim Plumbing System
+              </p>
+             </div>
+            </a>
+           </div>
+           <h6 class="list-heading">
+            SWR Range (Soil, Waste and Rainwater)
+           </h6>
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/swr-pipes-fittings/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/SWR-Cluster.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               SWR Plumbing System
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/low-noise-swr-pipes-fittings/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Silent-SWR-Pipe-cluster-1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad Low Noise SWR
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-active-drainage-ventilation-system/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/6.-Studor-P.A.P.A.-System.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad Active Drainage Ventilation System
+              </p>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="hover-container" id="box-2" style="display: none;">
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/underground-drainage-pipes-systems/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/UGD-PIpe-Cluster.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad UGD Solutions
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/manholes-inspection-chambers/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/8.-Manholes-_-Inspection-Chambers.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Manholes &amp; Inspection Chambers
+              </p>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="hover-container" id="box-3" style="display: none;">
+           <h6 class="list-heading">
+            Water Extraction Solutions
+           </h6>
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/upvc-column-pipes/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2023/04/Column-Pipe-Cluster_v1-1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Column Pipes
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/upvc-casing-pipes/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Blue-Casing_v1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Casing Pipes
+              </p>
+             </div>
+            </a>
+           </div>
+           <h6 class="list-heading">
+            Water Transmission Solutions
+           </h6>
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/hdpe-pipes/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/HDPE_SWASTH_Cluster_V1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               HDPE Pipes
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/agri-pipes-fittings/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/AGRI-Pipe-Cluster_V1-1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Agri Pipes
+              </p>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="hover-container" id="box-4" style="display: none;">
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/upvc-korrosafe-pipes-and-fittings/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Industrial-Pipe-Image_new.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               uPVC Korrosafe Pipes and Fittings
+              </p>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="hover-container" id="box-5" style="display: none;">
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/blazemaster-fire-protection-systems/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/BlazeMaster-Pipe-Image-1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               BlazeMaster® Fire Protection System
+              </p>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="hover-container" id="box-6" style="display: none;">
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/grease-interceptors/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/10.-Ashirvad_Grease-Solid-Interceptors.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Grease and Solid Interceptors
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-sewage-treatment-plant/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2024/06/STP.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad Sewage Treatment Plant
+              </p>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="hover-container" id="box-7" style="display: none;">
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/hdpe-pipes/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/HDPE_SWASTH_Cluster_V1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               HDPE Pipes
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/aliaxis-electrofusion-fittings/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Electrofusion_fittings.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Electrofusion Fittings
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/dynaflo-pvc-o-pipes/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/OPVC-Pipe-Cluster-Image_Edit.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Dynaflo PVC-O Pipes
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/akasison-siphonic-roof-drainage-system/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2024/09/Akasison-XL-1.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Akasison Siphonic Roof Drainage System
+              </p>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="hover-container" id="box-8" style="display: none;">
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-water-storage-tanks/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/WST_PURE_Yellow-Tank_Blue-Tape.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Water Storage Tanks
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/product/y-strainer/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Ashirvad_uPVC-Aqualife_Y-Strainer.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Y- Strainer
+              </p>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="hover-container" id="box-9" style="display: none;">
+           <div class="row w-100">
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-slimpro-concealed-cistern/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2025/05/Slimpro_3.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad Slimpro Concealed Cistern
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/concealed-valves-diverters/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Concealed-Valve-Diverter-For-Page.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Concealed Valves and Diverters
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/wc-pan-connectors/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/12.-WC-PAN-Connectors.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               WC PAN Connectors
+              </p>
+             </div>
+            </a>
+            <a class="cardtwo col-md-4" href="https://www.ashirvad.com/solution/ashirvad-waste-outlets-traps/">
+             <div class="image-container">
+              <img class="card-image" src="https://www.ashirvad.com/wp-content/uploads/2021/04/Waste-Outlet-Traps.png">
+             </div>
+             <div class="image-detail">
+              <p>
+               Ashirvad Waste Outlets &amp; Traps
+              </p>
+             </div>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <!-- <div class="two-container">
+                    </div> -->
+       </div>
+      </li>
+      <!-- active -->
+      <li class="navHeader__itemList has__navList">
+       <a class="navHeader--title" href="javascript:void(0)">
+        Services &amp; Offerings
+       </a>
+       <div class="dropdown__wrapper">
+        <div class="sm-backArrow">
+         <img alt="back-arrow" src="https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/arrow-right-red.svg">
+         <span>
+          Back
+         </span>
+        </div>
+        <ul class="navHeader__innerList">
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/design-and-specifications/">
+           Design &amp; Specification
+          </a>
+         </li>
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/installation-and-services/">
+           Installation &amp; Training
+          </a>
+         </li>
+        </ul>
+       </div>
+      </li>
+      <!-- active -->
+      <li class="navHeader__itemList has__navList">
+       <a class="navHeader--title" href="javascript:void(0)">
+        Careers
+       </a>
+       <div class="dropdown__wrapper">
+        <div class="sm-backArrow">
+         <img alt="back-arrow" src="https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/arrow-right-red.svg">
+         <span>
+          Back
+         </span>
+        </div>
+        <ul class="navHeader__innerList">
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/life-at-ashirvad/">
+           Life at Ashirvad
+          </a>
+         </li>
+         <li class="navHeader__innerListItem">
+          <a href="https://aliaxis.wd3.myworkdayjobs.com/Aliaxis_IndiaAshirvad1" target="_blank">
+           Opportunities
+          </a>
+         </li>
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/why-ashirvad/">
+           Why Ashirvad
+          </a>
+         </li>
+        </ul>
+       </div>
+      </li>
+      <li class="navHeader__itemList">
+       <a class="navHeader--title" href="https://www.ashirvad.com/news-and-media/">
+        News &amp; Events
+       </a>
+      </li>
+      <li class="navHeader__itemList">
+       <a class="navHeader--title" href="https://www.ashirvad.com/csr/">
+        CSR
+       </a>
+      </li>
+      <!-- active -->
+      <li class="navHeader__itemList has__navList">
+       <a class="navHeader--title" href="javascript:void(0)">
+        Resources
+       </a>
+       <div class="dropdown__wrapper">
+        <div class="sm-backArrow">
+         <img alt="back-arrow" src="https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/arrow-right-red.svg">
+         <span>
+          Back
+         </span>
+        </div>
+        <ul class="navHeader__innerList">
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/blogs/">
+           Blogs
+          </a>
+         </li>
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/case-study/">
+           Case studies
+          </a>
+         </li>
+         <li class="navHeader__innerListItem">
+          <a href="https://www.ashirvad.com/downloads/">
+           Downloads
+          </a>
+         </li>
+        </ul>
+       </div>
+      </li>
+      <li class="navHeader__itemList">
+       <a class="navHeader--title" href="https://www.ashirvad.com/contact-us/">
+        Contact us
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>

@@ -1,0 +1,31 @@
+<div class="products-tabs-wrapper">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item" *ngFor="let tab of tabs; let i = index">
+      <a class="nav-link" [class.active]="selectedTab === i" (click)="selectTab(i)" href="#" role="tab">
+        <h3>{{ tab.label }}</h3>
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" role="tablist">
+    <div class="tab-pane card" *ngFor="let tab of tabs; let i = index" [class.active]="selectedTab === i" [class.show]="selectedTab === i">
+      <div class="card-header">
+        <h4>{{ tab.label }}</h4>
+      </div>
+      <div class="card-body">
+        <div class="service-content">
+          <div class="contents-wrap">
+            <img class="tab-img" [src]="tab.img" [alt]="tab.label" />
+            <div class="contents-bottom">
+              <div class="contents">
+                <p>{{ tab.description }}</p>
+              </div>
+              <div class="btn-wrapper">
+                <a class="btn-danger arrow adjest" [href]="tab.link" target="_blank">View Solutions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

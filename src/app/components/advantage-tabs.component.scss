@@ -1,0 +1,90 @@
+.advantage-tabs-wrapper {
+  width: 100%;
+  min-height: 200px;
+  background: #f9f9f9;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.advantage-tabs-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.advantage-tabs-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.advantage-tab-btn {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px 8px 0 0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: border 0.2s, background 0.2s;
+  min-width: 120px;
+  outline: none;
+}
+.advantage-tab-btn.active {
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #e30613;
+  background: #f5f5f5;
+}
+.advantage-tab-btn:hover {
+  border-top: 2px solid #e30613;
+}
+.advantage-tab-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+.advantage-tab-title {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.advantage-tab-content {
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem;
+  min-height: 120px;
+  text-align: center;
+}
+.advantage-tab-content h3 {
+  margin-top: 0;
+  color: #e30613;
+  font-size: 1.3rem;
+}
+.advantage-tab-content p {
+  margin-bottom: 0;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 600px) {
+  .advantage-tabs-list {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  .advantage-tab-btn {
+    flex-direction: row;
+    justify-content: flex-start;
+    min-width: 0;
+    padding: 0.75rem 1rem;
+  }
+  .advantage-tab-icon {
+    margin-bottom: 0;
+    margin-right: 0.75rem;
+  }
+} 

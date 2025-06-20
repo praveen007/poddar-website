@@ -1,0 +1,25 @@
+<div class="innovations-swiper-wrapper">
+  <div class="container">
+    <h2 class="latest_section_heading">Latest from Ashirvad</h2>
+    <div class="innovations-swiper-container">
+      <div class="innovations-card" *ngFor="let innovation of innovations; let i = index" [class.active]="i === currentIndex" [style.display]="i === currentIndex ? 'block' : 'none'">
+        <a [href]="innovation.link" target="_blank" rel="noopener" class="event-card-img">
+          <img [src]="innovation.img" [alt]="innovation.title">
+        </a>
+        <div class="news-event-subInfo">
+          <div class="news-eventDate">{{ innovation.date }}</div>
+        </div>
+        <div class="news-event-desc">
+          <div class="news-event-desc-header">
+            <h5>{{ innovation.title }}</h5>
+          </div>
+        </div>
+      </div>
+      <button class="innovations-nav prev" (click)="prev()" aria-label="Previous innovation">&#10094;</button>
+      <button class="innovations-nav next" (click)="next()" aria-label="Next innovation">&#10095;</button>
+      <div class="innovations-dots">
+        <button *ngFor="let innovation of innovations; let i = index" [class.active]="i === currentIndex" (click)="goTo(i)" aria-label="Go to innovation"></button>
+      </div>
+    </div>
+  </div>
+</div> 

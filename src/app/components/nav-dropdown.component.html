@@ -1,0 +1,13 @@
+<div class="navHeader__itemList has__navList"
+     (mouseenter)="openMenu.emit()"
+     (mouseleave)="closeMenu.emit()"
+     (click)="toggleMenu.emit()">
+  <a class="navHeader--title" href="#">{{ label }}</a>
+  <div class="dropdown__wrapper" *ngIf="open">
+    <ul class="navHeader__innerList">
+      <li class="navHeader__innerListItem" *ngFor="let item of items">
+        <a [href]="item.href" [attr.target]="item.target || null">{{ item.label }}</a>
+      </li>
+    </ul>
+  </div>
+</div> 

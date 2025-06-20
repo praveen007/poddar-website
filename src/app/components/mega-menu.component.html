@@ -1,0 +1,25 @@
+<div class="navHeader__itemList has__navList w-nav"
+     (mouseenter)="openMenu.emit()"
+     (mouseleave)="closeMenu.emit()"
+     (click)="toggleMenu.emit()">
+  <a class="navHeader--title" href="#">{{ label }}</a>
+  <div class="dropdown__wrapper dropdown-height" *ngIf="open">
+    <div class="row height-fix">
+      <div class="navHeader__innerList col-md-4" *ngFor="let col of columns">
+        <ng-container *ngIf="col.heading">
+          <h6 class="list-heading">{{ col.heading }}</h6>
+        </ng-container>
+        <div class="row w-100">
+          <a class="cardtwo col-md-4" *ngFor="let item of col.items" [href]="item.href" [attr.target]="item.target || null">
+            <div class="image-container" *ngIf="item.img">
+              <img class="card-image" [src]="item.img" [alt]="item.label">
+            </div>
+            <div class="image-detail">
+              <p>{{ item.label }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
