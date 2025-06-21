@@ -17,7 +17,7 @@ export interface NavDropdownItem {
 export class NavDropdownComponent {
   @Input() label!: string;
   @Input() items: NavDropdownItem[] = [];
-  @Input() open = false;
+  @Input() open = true;
 
   @Output() openMenu = new EventEmitter<void>();
   @Output() closeMenu = new EventEmitter<void>();

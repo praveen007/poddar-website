@@ -1,4 +1,4 @@
-<div class="navHeader__itemList has__navList"
+<!-- <div class="navHeader__itemList has__navList"
      (mouseenter)="openMenu.emit()"
      (mouseleave)="closeMenu.emit()"
      (click)="toggleMenu.emit()">
@@ -10,4 +10,15 @@
       </li>
     </ul>
   </div>
-</div> 
+</div>  -->
+
+<li class="nav-item" [ngClass]="{'nav-active': open}"
+    (mouseenter)="open = true"
+    (mouseleave)="open = false">
+  <a class="nav-link" >{{ label }} ▾</a>
+  <ul class="dropdown" *ngIf="open">
+    <li *ngFor="let item of items">
+      <a class="dropdown-item" [href]="item.href">{{ item.label }}</a>
+    </li>
+  </ul>
+</li>
