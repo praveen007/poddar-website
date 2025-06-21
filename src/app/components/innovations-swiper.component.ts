@@ -18,16 +18,16 @@ interface InnovationCard {
 export class InnovationsSwiperComponent {
   innovations: InnovationCard[] = [
     {
-      img: 'https://www.ashirvad.com/wp-content/uploads/2025/04/Our-latest-Ashirvad-Aqualife-Ads-are-now-LIVE.png',
+      img: 'assets/innovation/innovation-1.png',
       title: 'Ashirvad Aqualife TVC Launch: A New Chapter in Water Safety',
       date: 'April 28, 2025',
-      link: 'https://www.ashirvad.com/news/ashirvad-aqualife-tvc-launch-a-new-chapter-in-water-safety/'
+      link: '#'
     },
     {
-      img: 'https://www.ashirvad.com/wp-content/uploads/2021/03/Wirelock.jpg',
+      img: 'assets/innovation/innovation-2.png',
       title: 'The unique WirelockTM system in uPVC Column Pipes',
       date: 'March 2021',
-      link: 'https://www.ashirvad.com/innovation/wirelock-upvc-column-pipes/'
+      link: '#'
     }
   ];
 

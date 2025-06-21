@@ -1,6 +1,6 @@
 .banner-wrapper {
   width: 100%;
-  min-height: 320px;
+  min-height: 400px;
   background: #f5f5f5;
   display: flex;
   align-items: center;
@@ -12,12 +12,12 @@
   width: 100%;
   max-width: 100vw;
   overflow: hidden;
-  min-height: 320px;
+  min-height: 400px;
 }
 
 .banner-slide {
   width: 100%;
-  min-height: 320px;
+  min-height: 400px;
   position: absolute;
   top: 0;
   left: 0;
@@ -34,7 +34,7 @@
 
 .banner-bg {
   width: 100%;
-  height: 320px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,8 +45,8 @@
 .banner-bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
+  object-fit: cover;
 }
 .banner-bg picture {
   width: 100%;
@@ -115,8 +115,20 @@
 }
 
 @media (max-width: 768px) {
-  .banner-bg, .banner-bg img {
-    height: 180px;
-    min-height: 180px;
+  .banner-wrapper {
+    min-height: 250px;
+  }
+  .banner-container {
+    min-height: 250px;
+  }
+  .banner-slide {
+    min-height: 250px;
+  }
+  .banner-bg {
+    min-height: 250px;
+  }
+  .banner-bg img {
+    width: 100%;
+    height: 100%;
   }
 } 

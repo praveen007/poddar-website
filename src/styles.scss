@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Global font family - Open Sans Regular */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  //font-weight: 200;
+  //line-height: 1.2
+}
+
+/* Ensure all elements inherit the font family */
+* {
+  font-family: inherit;
+}
