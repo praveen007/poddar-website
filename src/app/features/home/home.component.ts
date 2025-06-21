@@ -16,7 +16,7 @@ import { AnimateOnScrollDirective } from '../../shared/animate-on-scroll.directi
   standalone: true,
   imports: [
     ProductTabsComponent,
-    ProductsTabsComponent,
+    //ProductsTabsComponent,
     BannerComponent,
     AdvantageTabsComponent,
     CounterSectionComponent,

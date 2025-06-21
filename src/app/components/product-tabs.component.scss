@@ -8,15 +8,13 @@
   border-top-right-radius: 80px;
 }
 
-.tabs {
-//   width: 220px;
+// Desktop Tabs
+.desktop-tabs {
   background: linear-gradient(to bottom, #d774ae, #d04460);
   color: white;
   display: flex;
   flex-direction: column;
   width: 30%;
-//   justify-content: space-evenly;
-//   padding-top: 20px;
 }
 
 .tab {
@@ -33,7 +31,8 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-.content {
+// Desktop Content
+.desktop-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -50,11 +49,10 @@
 }
 
 .tab-description {
-//   margin-top: 20px;
-    padding-inline-start: 2rem;
-    padding-bottom: 10px;
-    flex: 3;
-    overflow: auto;
+  padding-inline-start: 2rem;
+  padding-bottom: 10px;
+  flex: 3;
+  overflow: auto;
 }
 
 .tab-description p {
@@ -77,4 +75,155 @@
 
 .action-btn:hover {
   background: #c30000;
+}
+
+// Mobile Accordion
+.mobile-accordion {
+  display: none;
+  width: 100%;
+  height: auto;
+  
+  .accordion-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: white;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(to right, #d774ae, #d04460);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+      background: linear-gradient(to right, #c0659d, #b83a52);
+    }
+  }
+  
+  .accordion-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .accordion-icon {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease;
+    
+    &.expanded {
+      transform: rotate(45deg);
+    }
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    
+    &.expanded {
+      max-height: 800px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  .accordion-body {
+    padding: 1.5rem;
+    background: #fff;
+  }
+  
+  .accordion-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .accordion-text {
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      color: #555;
+      font-size: 16px;
+    }
+    
+    .btn-wrapper {
+      margin-top: 1rem;
+      
+      .action-btn {
+        background: #e60000;
+        color: white;
+        font-weight: bold;
+        padding: 12px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background 0.3s ease;
+        
+        &:hover {
+          background: #c30000;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .product-tabs-container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 12px;
+    
+    // Hide desktop tabs on mobile
+    .desktop-tabs,
+    .desktop-content {
+      display: none !important;
+    }
+    
+    // Show mobile accordion
+    .mobile-accordion {
+      display: block !important;
+      
+      .accordion-content {
+        max-height: 0 !important;
+        overflow: hidden !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        
+        &.expanded {
+          max-height: 800px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .product-tabs-container {
+    // Hide mobile accordion on desktop
+    .mobile-accordion {
+      display: none !important;
+    }
+  }
 }
