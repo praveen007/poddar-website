@@ -4,7 +4,7 @@
       <div class="banner-bg">
         <picture>
           <source *ngIf="slide.imgMobile" media="(max-width: 768px)" [attr.srcset]="slide.imgMobile">
-          <img [src]="slide.img" [alt]="slide.alt">
+          <img [src]="slide.img" [alt]="slide.alt" (error)="onImageError($event, slide.img)" (load)="onImageLoad($event, slide.img)">
         </picture>
         <div class="swiper-contents">
           <div class="container h-100">

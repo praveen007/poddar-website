@@ -13,6 +13,7 @@ export class HeaderComponent {
   // Track which dropdown is open (by index or name)
   openDropdown: string | null = null;
   isMobileMenu = false;
+  showInput = false;
 
   // Open dropdown on hover (desktop) or click (mobile)
   openMenu(name: string) {
@@ -25,6 +26,10 @@ export class HeaderComponent {
     this.openDropdown = this.openDropdown === name ? null : name;
   }
 
+  toggleInput()
+  {
+    this.showInput = !this.showInput;
+  }
   // Detect mobile width for click/tap logic
   get isMobile() {
     return window.innerWidth <= 900;

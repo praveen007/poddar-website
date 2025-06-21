@@ -25,7 +25,10 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/assets"
+              "src/assets/",
+              "src/assets/awards",
+              "src/assets/projects",
+              "src/assets/banner"
             ],
             "styles": [
               "src/styles.scss"
@@ -88,5 +91,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
