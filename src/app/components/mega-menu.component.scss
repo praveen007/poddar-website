@@ -102,7 +102,6 @@
   list-style: none;
   padding: 8px;
   box-sizing: border-box;
-  color: gray;
   
   @media (min-width: 768px) {
     padding: 10px;
@@ -112,8 +111,6 @@
 .nav-link {
   padding: 8px;
   cursor: pointer;
-  font-weight: bold;
-  color: #007bff;
   text-decoration: none;
   font-size: 0.9rem;
   
