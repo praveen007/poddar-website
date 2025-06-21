@@ -1,8 +1,20 @@
 <div class="counter-section-wrapper">
-  <div class="counter-list">
-    <div class="counter-item" *ngFor="let counter of counters">
-      <div class="counter-value">{{ counter.display | number }}</div>
-      <div class="counter-label">{{ counter.label }}</div>
+  <div class="counter-list scroll-stagger">
+    <div class="counter-item scroll-fade-in">
+      <div class="counter-value counter-animate" data-target="50">0</div>
+      <div class="counter-label">Years of Excellence</div>
+    </div>
+    <div class="counter-item scroll-fade-in">
+      <div class="counter-value counter-animate" data-target="1000">0</div>
+      <div class="counter-label">Projects Completed</div>
+    </div>
+    <div class="counter-item scroll-fade-in">
+      <div class="counter-value counter-animate" data-target="500">0</div>
+      <div class="counter-label">Happy Clients</div>
+    </div>
+    <div class="counter-item scroll-fade-in">
+      <div class="counter-value counter-animate" data-target="25">0</div>
+      <div class="counter-label">Awards Won</div>
     </div>
   </div>
 </div> 

@@ -15,7 +15,7 @@
 <li class="nav-item" [ngClass]="{'nav-active': open}"
     (mouseenter)="open = true"
     (mouseleave)="open = false">
-  <a class="nav-link" >{{ label }} ▾</a>
+  <a class="nav-link" >{{ label }}</a>
   <ul class="dropdown" *ngIf="open">
     <li *ngFor="let item of items">
       <a class="dropdown-item" [href]="item.href">{{ item.label }}</a>

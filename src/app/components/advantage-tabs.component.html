@@ -1,15 +1,16 @@
 <div class="advantage-tabs-wrapper">
   <div class="advantage-tabs-container">
-    <div class="advantage-tabs-list">
-      <button *ngFor="let tab of tabs; let i = index"
-              class="advantage-tab-btn"
-              [class.active]="i === activeTab"
-              (click)="setActiveTab(i)">
-        <img [src]="tab.icon" [alt]="tab.title" class="advantage-tab-icon">
+    <div class="advantage-tabs-list scroll-stagger">
+      <button 
+        class="advantage-tab-btn scroll-scale" 
+        *ngFor="let tab of tabs; let i = index"
+        [class.active]="i === activeTab"
+        (click)="setActiveTab(i)">
+        <img class="advantage-tab-icon" [src]="tab.icon" [alt]="tab.title">
         <span class="advantage-tab-title">{{ tab.title }}</span>
       </button>
     </div>
-    <div class="advantage-tab-content">
+    <div class="advantage-tab-content scroll-fade-in">
       <h3>{{ tabs[activeTab].title }}</h3>
       <p>{{ tabs[activeTab].content }}</p>
     </div>
