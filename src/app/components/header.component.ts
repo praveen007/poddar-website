@@ -16,7 +16,8 @@ export class HeaderComponent {
   openDropdown: string | null = null;
   isMobileMenu = false;
   showInput = false;
-  showLogin=false;
+  showLogin = false;
+  mobileMenuOpen = false;
 
   // Open dropdown on hover (desktop) or click (mobile)
   openMenu(name: string) {
@@ -27,6 +28,21 @@ export class HeaderComponent {
   }
   toggleMenu(name: string) {
     this.openDropdown = this.openDropdown === name ? null : name;
+  }
+
+  toggleMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+    // Prevent body scroll when mobile menu is open
+    if (this.mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+
+  closeMobileMenu() {
+    this.mobileMenuOpen = false;
+    document.body.style.overflow = '';
   }
 
   toggleInput()
@@ -48,8 +64,9 @@ export class HeaderComponent {
 
     if (this.showLogin && !this._eref.nativeElement.contains(target)) {
       this.showLogin = false;
+    }
   }
-  }
+
   // Detect mobile width for click/tap logic
   get isMobile() {
     return window.innerWidth <= 900;

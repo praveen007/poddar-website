@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavDropdownComponent, NavDropdownItem } from './nav-dropdown.component';
 import { MegaMenuComponent, MegaMenuColumn, MegaMenuItem } from './mega-menu.component';
@@ -11,7 +11,11 @@ import { MegaMenuComponent, MegaMenuColumn, MegaMenuItem } from './mega-menu.com
   styleUrls: ['./header-bottom.component.scss']
 })
 export class HeaderBottomComponent {
+  @Input() mobileMenuOpen = false;
+  @Output() closeMobileMenu = new EventEmitter<void>();
+
   openDropdown: string | null = null;
+  isMobileMenu = false;
 
   aboutItems: NavDropdownItem[] = [
     { label: 'Who we are', href: 'https://www.ashirvad.com/who-we-are/' },
@@ -69,11 +73,21 @@ export class HeaderBottomComponent {
   //   // Add more columns as needed
   // ];
 
-  
+  openMenu(name: string) {
+    this.openDropdown = name;
+  }
+  closeMenu() {
+    this.openDropdown = null;
+  }
+  toggleMenu(name: string) {
+    this.openDropdown = this.openDropdown === name ? null : name;
+  }
 
-  openMenu(name: string) { this.openDropdown = name; }
-  closeMenu() { this.openDropdown = null; }
-  toggleMenu(name: string) { this.openDropdown = this.openDropdown === name ? null : name; }
+  onCloseMobileMenu() {
+    this.closeMobileMenu.emit();
+  }
 
-  get isMobile() { return window.innerWidth <= 900; }
+  get isMobile() {
+    return window.innerWidth <= 900;
+  }
 } 

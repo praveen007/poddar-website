@@ -27,11 +27,14 @@
               </div>
             </div>
           </div>
-          <div class="navbarHeader__hamburger">
-            <div class="hamburger__icon"></div>
+          <div class="navbarHeader__hamburger" (click)="toggleMobileMenu()">
+            <div class="hamburger__icon" [class.active]="mobileMenuOpen"></div>
           </div>
         </div>
       </div>
-      <app-header-bottom></app-header-bottom>
+      <app-header-bottom [mobileMenuOpen]="mobileMenuOpen" (closeMobileMenu)="closeMobileMenu()"></app-header-bottom>
     </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" [class.active]="mobileMenuOpen" (click)="closeMobileMenu()"></div>
   </div>
