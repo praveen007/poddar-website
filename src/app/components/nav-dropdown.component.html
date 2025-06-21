@@ -15,13 +15,10 @@
 <li class="nav-item" [ngClass]="{'nav-active': open}"
     (mouseenter)="open = true"
     (mouseleave)="open = false">
-  <!-- If only one item, treat as simple link -->
-  <a class="nav-link" *ngIf="items.length === 1" [href]="items[0].href" [attr.target]="items[0].target || null">{{ label }}</a>
-  <!-- If multiple items, show as dropdown -->
-  <a class="nav-link" *ngIf="items.length > 1">{{ label }}</a>
-  <ul class="dropdown" *ngIf="open && items.length > 1">
+  <a class="nav-link" >{{ label }}</a>
+  <ul class="dropdown" *ngIf="open">
     <li *ngFor="let item of items">
-      <a class="dropdown-item" [href]="item.href" [attr.target]="item.target || null">{{ item.label }}</a>
+      <a class="dropdown-item" [href]="item.href">{{ item.label }}</a>
     </li>
   </ul>
 </li>

@@ -29,15 +29,6 @@ export class HeaderBottomComponent {
     { label: 'Opportunities', href: 'https://aliaxis.wd3.myworkdayjobs.com/Aliaxis_IndiaAshirvad1', target: '_blank' },
     { label: 'Why Ashirvad', href: 'https://www.ashirvad.com/why-ashirvad/' }
   ];
-  newsItems: NavDropdownItem[] = [
-    { label: 'News & Events', href: '/news-and-media' }
-  ];
-  csrItems: NavDropdownItem[] = [
-    { label: 'CSR', href: '/csr' }
-  ];
-  contactItems: NavDropdownItem[] = [
-    { label: 'Contact us', href: '/contact-us' }
-  ];
   resourcesItems: NavDropdownItem[] = [
     { label: 'Blogs', href: 'https://www.ashirvad.com/blogs/' },
     { label: 'Case studies', href: 'https://www.ashirvad.com/case-study/' },

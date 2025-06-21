@@ -41,24 +41,10 @@
       </app-nav-dropdown>
     </li>
     <li class="navHeader__itemList">
-      <app-nav-dropdown
-        label="News & Events"
-        [items]="newsItems"
-        [open]="openDropdown === 'news'"
-        (openMenu)="!isMobile && openMenu('news')"
-        (closeMenu)="!isMobile && closeMenu()"
-        (toggleMenu)="isMobile && toggleMenu('news')">
-      </app-nav-dropdown>
+      <a class="navHeader--title" href="/news-and-media">News &amp; Events</a>
     </li>
     <li class="navHeader__itemList">
-      <app-nav-dropdown
-        label="CSR"
-        [items]="csrItems"
-        [open]="openDropdown === 'csr'"
-        (openMenu)="!isMobile && openMenu('csr')"
-        (closeMenu)="!isMobile && closeMenu()"
-        (toggleMenu)="isMobile && toggleMenu('csr')">
-      </app-nav-dropdown>
+      <a class="navHeader--title" href="/csr">CSR</a>
     </li>
     <li class="navHeader__itemList">
       <app-nav-dropdown
@@ -71,14 +57,7 @@
       </app-nav-dropdown>
     </li>
     <li class="navHeader__itemList">
-      <app-nav-dropdown
-        label="Contact us"
-        [items]="contactItems"
-        [open]="openDropdown === 'contact'"
-        (openMenu)="!isMobile && openMenu('contact')"
-        (closeMenu)="!isMobile && closeMenu()"
-        (toggleMenu)="isMobile && toggleMenu('contact')">
-      </app-nav-dropdown>
+      <a class="navHeader--title" href="/contact-us">Contact us</a>
     </li>
   </ul>
 </div>
