@@ -1,6 +1,6 @@
 <div class="banner-wrapper">
   <div class="banner-container">
-    <div class="banner-slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex" [style.display]="i === currentIndex ? 'block' : 'none'">
+    <div class="banner-slide scroll-fade-in" *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex" [style.display]="i === currentIndex ? 'block' : 'none'">
       <div class="banner-bg">
         <picture>
           <source *ngIf="slide.imgMobile" media="(max-width: 768px)" [attr.srcset]="slide.imgMobile">
@@ -10,16 +10,18 @@
           <div class="container h-100">
             <div class="row align-items-center h-90">
               <div class="col-12 col-md-11 col-lg-10 mx-auto">
-                <h2 *ngIf="slide.heading">{{ slide.heading }}</h2>
+                <h2 *ngIf="slide.heading" class="text-reveal">
+                  <span class="text-content">{{ slide.heading }}</span>
+                </h2>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <button class="banner-nav prev" (click)="prev()" aria-label="Previous slide">&#10094;</button>
-    <button class="banner-nav next" (click)="next()" aria-label="Next slide">&#10095;</button>
-    <div class="banner-dots">
+    <button class="banner-nav prev scroll-scale" (click)="prev()" aria-label="Previous slide">&#10094;</button>
+    <button class="banner-nav next scroll-scale" (click)="next()" aria-label="Next slide">&#10095;</button>
+    <div class="banner-dots scroll-fade-in">
       <button *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex" (click)="goTo(i)" aria-label="Go to slide"></button>
     </div>
   </div>

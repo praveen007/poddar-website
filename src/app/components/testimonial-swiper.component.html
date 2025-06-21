@@ -1,22 +1,22 @@
 <div class="testimonial-swiper-wrapper">
   <div class="container">
-    <h2 class="testimonial_section_heading">What Ashirvad Means To</h2>
+    <h2 class="testimonial_section_heading scroll-fade-in">What Our Clients Say</h2>
     <div class="testimonial-swiper-container">
-      <div class="testimonial-card card" *ngFor="let testimonial of testimonials; let i = index" [class.active]="i === currentIndex" [style.display]="i === currentIndex ? 'block' : 'none'">
+      <div class="testimonial-card scroll-fade-in" *ngFor="let testimonial of testimonials; let i = index" [class.active]="i === currentIndex">
         <div class="media">
           <div class="img__wrapper">
-            <img [src]="testimonial.img" [alt]="testimonial.name" class="img-fluid">
+            <img [src]="testimonial.img" [alt]="testimonial.name">
           </div>
           <div class="media-body">
-            <h3 class="mt-0">{{ testimonial.name }}</h3>
+            <h5 class="mt-0">{{ testimonial.name }}</h5>
             <p class="card-text">{{ testimonial.text }}</p>
           </div>
         </div>
       </div>
-      <button class="testimonial-nav prev" (click)="prev()" aria-label="Previous testimonial">&#10094;</button>
-      <button class="testimonial-nav next" (click)="next()" aria-label="Next testimonial">&#10095;</button>
-      <div class="testimonial-dots">
-        <button *ngFor="let testimonial of testimonials; let i = index" [class.active]="i === currentIndex" (click)="goTo(i)" aria-label="Go to testimonial"></button>
+      <button class="testimonial-nav prev scroll-scale" (click)="prev()">‹</button>
+      <button class="testimonial-nav next scroll-scale" (click)="next()">›</button>
+      <div class="testimonial-dots scroll-fade-in">
+        <button *ngFor="let testimonial of testimonials; let i = index" [class.active]="i === currentIndex" (click)="goTo(i)"></button>
       </div>
     </div>
   </div>

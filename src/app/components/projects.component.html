@@ -1,16 +1,29 @@
 <div class="projects-wrapper">
   <div class="container">
-    <h2 class="blogs_section_heading">Our Prestigious Projects</h2>
-    <div class="projects-grid">
-      <div class="projects-card" *ngFor="let project of projects">
-        <div class="projects_image">
-          <a [href]="project.link" target="_blank" rel="noopener">
-            <img [src]="project.img" [alt]="project.title">
-          </a>
+    <h2 class="blogs_section_heading scroll-fade-in">Our Projects</h2>
+    <div class="projects-grid scroll-stagger">
+      <div class="projects-card scroll-slide-left">
+        <div class="projects_image image-reveal">
+          <img src="assets/projects/project-1.png" alt="Project 1">
         </div>
         <div class="projects_body">
-          <h3 class="p_title">{{ project.title }}</h3>
-          <p class="p_description">{{ project.description }}</p>
+          <h3 class="p_title">Residential Complex</h3>
+          <p class="p_description">Modern plumbing solutions for luxury residential projects</p>
+          <div class="btn-wrapper">
+            <a href="#" class="btn-danger arrow">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="projects-card scroll-slide-right">
+        <div class="projects_image image-reveal">
+          <img src="assets/projects/project-2.png" alt="Project 2">
+        </div>
+        <div class="projects_body">
+          <h3 class="p_title">Commercial Building</h3>
+          <p class="p_description">Industrial-grade plumbing systems for commercial spaces</p>
+          <div class="btn-wrapper">
+            <a href="#" class="btn-danger arrow">Learn More</a>
+          </div>
         </div>
       </div>
     </div>

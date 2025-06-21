@@ -28,7 +28,8 @@
               "src/assets/",
               "src/assets/awards",
               "src/assets/projects",
-              "src/assets/banner"
+              "src/assets/banner",
+              "src/assets/innovation"
             ],
             "styles": [
               "src/styles.scss"
