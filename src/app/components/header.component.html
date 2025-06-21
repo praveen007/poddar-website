@@ -12,8 +12,8 @@
           <div class="navHeader__searchTerm">
             <form action="/search" method="get" role="search">
               <div class="searchTerm__wrapper">
-                <img alt="searchTermicon" class="searchTerm--icon" src="assets/search-icon.svg" />
-                <input id="searchTerm--input" name="s" placeholder="Search" type="text" />
+                <img alt="searchTermicon" class="searchTerm--icon"  (click)="toggleInput()" src="assets/search-icon.svg" />
+                <input *ngIf="showInput" id="searchTerm--input" name="s" placeholder="Search" type="text" class="searchTerm--icon"/>
               </div>
             </form>
           </div>
