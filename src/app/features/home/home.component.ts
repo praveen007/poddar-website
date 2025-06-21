@@ -9,6 +9,7 @@ import { InnovationsSwiperComponent } from '../../components/innovations-swiper.
 import { TestimonialSwiperComponent } from '../../components/testimonial-swiper.component';
 import { PlumbingSchoolComponent } from '../../components/plumbing-school.component';
 import { ProductTabsComponent } from '../../components/product-tabs.component';
+import { AnimateOnScrollDirective } from '../../shared/animate-on-scroll.directive';
 
 @Component({
   selector: 'app-home',
@@ -23,7 +24,8 @@ import { ProductTabsComponent } from '../../components/product-tabs.component';
     ProjectsComponent,
     InnovationsSwiperComponent,
     TestimonialSwiperComponent,
-    PlumbingSchoolComponent
+    PlumbingSchoolComponent,
+    AnimateOnScrollDirective
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
