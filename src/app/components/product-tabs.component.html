@@ -1,5 +1,6 @@
 <div class="product-tabs-container">
-  <div class="tabs">
+  <!-- Desktop Tabs -->
+  <div class="tabs desktop-tabs">
     <div
       class="tab"
       *ngFor="let tab of tabs; let i = index"
@@ -9,13 +10,41 @@
     </div>
   </div>
 
-  <div class="content" *ngIf="tabs[activeIndex]" [@fadeSlide]>
+  <!-- Desktop Content -->
+  <div class="content desktop-content" *ngIf="tabs[activeIndex]" [@fadeSlide]>
     <img [src]="tabs[activeIndex].image" alt="" class="tab-image" />
     <div class="tab-description">
       <p *ngFor="let line of tabs[activeIndex].description">{{ line }}</p>
       <a [routerLink]="tabs[activeIndex].actionUrl" class="action-btn">
         {{ tabs[activeIndex].actionText }} →
       </a>
+    </div>
+  </div>
+
+  <!-- Mobile Accordion -->
+  <div class="mobile-accordion">
+    <div class="accordion-item" *ngFor="let tab of tabs; let i = index">
+      <div class="accordion-header" (click)="toggleAccordion(i)">
+        <h3 class="accordion-title">{{ tab.name }}</h3>
+        <span class="accordion-icon" [class.expanded]="expandedAccordion === i">{{ expandedAccordion === i ? '−' : '+' }}</span>
+      </div>
+      <div class="accordion-content" 
+           [class.expanded]="expandedAccordion === i" 
+           [style.max-height]="expandedAccordion === i ? '800px' : '0px'"
+           [style.opacity]="expandedAccordion === i ? '1' : '0'"
+           [style.visibility]="expandedAccordion === i ? 'visible' : 'hidden'">
+        <div class="accordion-body">
+          <img class="accordion-img" [src]="tab.image" [alt]="tab.name" />
+          <div class="accordion-text">
+            <p *ngFor="let line of tab.description">{{ line }}</p>
+            <div class="btn-wrapper">
+              <a [routerLink]="tab.actionUrl" class="action-btn">
+                {{ tab.actionText }} →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

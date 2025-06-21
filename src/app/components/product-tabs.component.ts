@@ -34,17 +34,7 @@ export class ProductTabsComponent {
   tabs = [
     {
       name: 'Building',
-      image: 'assets/building.jpg',
-      description: [
-        'We specialize in designing modern sanitary and drainage solutions.',
-        'We are also the top manufacturer of plumbing pipes for hot and cold water application in residential, commercial projects.'
-      ],
-      actionText: 'View Solutions',
-      actionUrl: '/solutions/building'
-    },
-    {
-      name: 'Pipes',
-      image: 'assets/building.jpg',
+      image: 'assets/products/building.jpg',
       description: [
         'We specialize in designing modern sanitary and drainage solutions.',
         'We are also the top manufacturer of plumbing pipes for hot and cold water application in residential, commercial projects.'
@@ -54,29 +44,41 @@ export class ProductTabsComponent {
     },
     {
       name: 'Agriculture',
-      image: 'assets/agriculture.jpg',
+      image: 'assets/products/agriculture.jpg',
       description: [
-        'Our agriculture pipe systems are built for efficiency.',
-        'Durable under varied field conditions.'
+        'We build responsible water management solutions that can unlock higher crop yields, better harvest, and efficient resource productivity for prolonged use.'
       ],
       actionText: 'View Solutions',
       actionUrl: '/solutions/agriculture'
     },
     {
       name: 'Industrial',
-      image: 'assets/industrial.jpg',
+      image: 'assets/products/industry.jpg',
       description: [
-        'Robust piping for industrial flow systems.',
-        'Trusted across manufacturing sectors.'
+        'We employ sophisticated fluid management, air distribution systems, and a range of thermoplastic piping systems that can be used for a variety of industrial applications.'
       ],
       actionText: 'View Solutions',
-      actionUrl: '/solutions/industrial'
+      actionUrl: '/solutions/industry'
+    },
+    {
+      name: 'Infrastructure',
+      image: 'assets/products/infrastructure.jpg',
+      description: [
+        'We provide scalable solutions for sewage regulation, equitable water distribution and preservation that can create conscious, sustainable change in communities and commerce.'
+      ],
+      actionText: 'View Solutions',
+      actionUrl: '/solutions/infrastructure'
     }
   ];
 
   activeIndex = 0;
+  expandedAccordion: number | null = null;
 
   setActive(index: number) {
     this.activeIndex = index;
+  }
+
+  toggleAccordion(index: number) {
+    this.expandedAccordion = this.expandedAccordion === index ? null : index;
   }
 }

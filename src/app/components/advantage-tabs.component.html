@@ -1,18 +1,58 @@
-<div class="advantage-tabs-wrapper">
-  <div class="advantage-tabs-container">
-    <div class="advantage-tabs-list scroll-stagger">
-      <button 
-        class="advantage-tab-btn scroll-scale" 
-        *ngFor="let tab of tabs; let i = index"
-        [class.active]="i === activeTab"
-        (click)="setActiveTab(i)">
-        <img class="advantage-tab-icon" [src]="tab.icon" [alt]="tab.title">
-        <span class="advantage-tab-title">{{ tab.title }}</span>
-      </button>
+<section class="container-fluid tabs__container section__padding">
+  <div class="container">
+    <div class="row advantage-tab-title">
+      <div class="col-12 col-md-12 col-lg-8 mx-auto">
+        <div class="section__heading" data-aos="fade-up">
+          <h2>
+            The Aliaxis Advantage
+          </h2>
+          <p>
+            For over 25 years, we at Ashirvad Pipes, have defined the gold standard in product, processes, and expertise across the plumbing industry. We pride ourselves on our ability to provide world-class access to global products and services right to your doorstep through relentless innovation and a commitment to stay ahead of the curve.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="advantage-tab-content scroll-fade-in">
-      <h3>{{ tabs[activeTab].title }}</h3>
-      <p>{{ tabs[activeTab].content }}</p>
+    
+    <div class="row">
+      <div class="col-12">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a 
+              *ngFor="let tab of tabs; let i = index"
+              [class.active]="i === activeTab"
+              (click)="setActiveTab(i)"
+              class="nav-link" 
+              role="tab">
+              <div class="media">
+                <div class="icon__box">
+                  <img [alt]="tab.title" class="img-fluid" [src]="tab.icon">
+                </div>
+                <div class="media-body">
+                  <h5 class="mt-0">
+                    {{ tab.title }}
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </nav>
+        
+        <div class="tab-content" id="nav-tabContent">
+          <div 
+            *ngFor="let tab of tabs; let i = index"
+            [class.active]="i === activeTab"
+            [class.show]="i === activeTab"
+            class="tab-pane fade" 
+            role="tabpanel">
+            <div class="tab-content-wrapper" [style.background-image]="'url(' + tab.backgroundImage + ')'">
+              <div class="content-overlay">
+                <h3>{{ tab.title }}</h3>
+                <p>{{ tab.content }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div> 
+</section> 

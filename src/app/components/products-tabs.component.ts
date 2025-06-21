@@ -44,8 +44,13 @@ export class ProductsTabsComponent {
   ];
 
   selectedTab = 0;
+  expandedAccordion: number | null = null;
 
   selectTab(index: number) {
     this.selectedTab = index;
+  }
+
+  toggleAccordion(index: number) {
+    this.expandedAccordion = this.expandedAccordion === index ? null : index;
   }
 } 

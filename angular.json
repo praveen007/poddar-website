@@ -29,7 +29,9 @@
               "src/assets/awards",
               "src/assets/projects",
               "src/assets/banner",
-              "src/assets/innovation"
+              "src/assets/innovation",
+              "src/assets/products",
+              "src/assets/advantage"
             ],
             "styles": [
               "src/styles.scss"
