@@ -25,6 +25,10 @@
   display: flex;
   align-items: center;
   transition: border-bottom 0.2s;
+  color: black;
+  a {
+    color: black;
+  }
 }
 .navHeader__itemList:hover {
   border-bottom: 3px solid #00aeef;
