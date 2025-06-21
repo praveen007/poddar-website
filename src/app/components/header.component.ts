@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener,ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderBottomComponent } from './header-bottom.component';
 
@@ -10,10 +10,13 @@ import { HeaderBottomComponent } from './header-bottom.component';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  constructor(private _eref:ElementRef){}
+
   // Track which dropdown is open (by index or name)
   openDropdown: string | null = null;
   isMobileMenu = false;
   showInput = false;
+  showLogin=false;
 
   // Open dropdown on hover (desktop) or click (mobile)
   openMenu(name: string) {
@@ -29,6 +32,23 @@ export class HeaderComponent {
   toggleInput()
   {
     this.showInput = !this.showInput;
+  }
+
+  toggleLogin()
+  {
+    this.showLogin = !this.showLogin;
+  }
+
+  @HostListener('document:click', ['$event.target'])
+  onDocumentClick(target: any) {
+    // Narrow down to ensure it's an HTMLElement
+    if (!(target instanceof HTMLElement)) {
+      return;
+    }
+
+    if (this.showLogin && !this._eref.nativeElement.contains(target)) {
+      this.showLogin = false;
+  }
   }
   // Detect mobile width for click/tap logic
   get isMobile() {
