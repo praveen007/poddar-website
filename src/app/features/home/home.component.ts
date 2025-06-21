@@ -8,11 +8,13 @@ import { ProjectsComponent } from '../../components/projects.component';
 import { InnovationsSwiperComponent } from '../../components/innovations-swiper.component';
 import { TestimonialSwiperComponent } from '../../components/testimonial-swiper.component';
 import { PlumbingSchoolComponent } from '../../components/plumbing-school.component';
+import { ProductTabsComponent } from '../../components/product-tabs.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
+    ProductTabsComponent,
     ProductsTabsComponent,
     BannerComponent,
     AdvantageTabsComponent,

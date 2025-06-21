@@ -39,8 +39,12 @@ export class HeaderBottomComponent {
   {
     category: 'Plumbing Pipes and Fittings',
     items: [
-      { title: 'CPVC Range (Hot and Cold)', url: '/cpvc', image: 'assets/cpvc.png' },
-      { title: 'UPVC Range (Cold Water)', url: '/upvc', image: 'assets/upvc.png' },
+      { title: 'CPVC Range (Hot and Cold)', url: '/cpvc', image: 'assets/OPVC-Pipe-Cluster-Image_Edit.png' },
+      { title: 'UPVC Range (Cold Water)', url: '/upvc', image: 'assets/OPVC-Pipe-Cluster-Image_Edit.png' },
+      { title: 'UPVC Range (Cold Water)', url: '/upvc', image: 'assets/OPVC-Pipe-Cluster-Image_Edit.png' },
+      { title: 'UPVC Range (Cold Water)', url: '/upvc', image: 'assets/OPVC-Pipe-Cluster-Image_Edit.png' },
+      { title: 'UPVC Range (Cold Water)', url: '/upvc', image: 'assets/OPVC-Pipe-Cluster-Image_Edit.png' },
+
     ]
   },
   {

@@ -1,0 +1,80 @@
+.product-tabs-container {
+  display: flex;
+  overflow: hidden;
+  height: 500px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.tabs {
+  width: 220px;
+  background: linear-gradient(to bottom, #d774ae, #d04460);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  
+//   justify-content: space-evenly;
+//   padding-top: 20px;
+}
+
+.tab {
+  padding: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  flex-grow: 1;
+  align-content: center;
+  text-align: center
+}
+
+.tab.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.tab-image {
+  width: 100%;
+//   max-height: 250px;
+  max-height: inherit;
+  object-fit: cover;
+  flex-grow: 1;
+//   border-radius: 8px;
+}
+
+.tab-description {
+//   margin-top: 20px;
+    padding-inline-start: 2rem;
+    flex-grow: 1;
+}
+
+.tab-description p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.action-btn {
+  background: #e60000;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #c30000;
+}

@@ -152,19 +152,21 @@
   max-height: 400px; /* Matches dropdown max-height */
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 12px;
-  min-width: 300px; /* Optional: keeps right section wide enough */
+  width: 300px; /* Optional: keeps right section wide enough */
+  flex-wrap: wrap;
 }
 
 .item-title {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
 .item-title img {
-  height: 50px;
-  width: auto;
+  height: 100px;
+  width: 100px;
   object-fit: contain;
 }

@@ -1,0 +1,21 @@
+<div class="product-tabs-container">
+  <div class="tabs">
+    <div
+      class="tab"
+      *ngFor="let tab of tabs; let i = index"
+      [class.active]="i === activeIndex"
+      (click)="setActive(i)">
+      {{ tab.name }}
+    </div>
+  </div>
+
+  <div class="content" *ngIf="tabs[activeIndex]" [@fadeSlide]>
+    <img [src]="tabs[activeIndex].image" alt="" class="tab-image" />
+    <div class="tab-description">
+      <p *ngFor="let line of tabs[activeIndex].description">{{ line }}</p>
+      <a [routerLink]="tabs[activeIndex].actionUrl" class="action-btn">
+        {{ tabs[activeIndex].actionText }} →
+      </a>
+    </div>
+  </div>
+</div>
