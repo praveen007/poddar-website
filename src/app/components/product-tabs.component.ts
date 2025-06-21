@@ -43,6 +43,16 @@ export class ProductTabsComponent {
       actionUrl: '/solutions/building'
     },
     {
+      name: 'Pipes',
+      image: 'assets/building.jpg',
+      description: [
+        'We specialize in designing modern sanitary and drainage solutions.',
+        'We are also the top manufacturer of plumbing pipes for hot and cold water application in residential, commercial projects.'
+      ],
+      actionText: 'View Solutions',
+      actionUrl: '/solutions/building'
+    },
+    {
       name: 'Agriculture',
       image: 'assets/agriculture.jpg',
       description: [
