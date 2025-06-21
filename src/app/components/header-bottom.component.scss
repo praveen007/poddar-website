@@ -24,6 +24,12 @@
   position: relative;
   display: flex;
   align-items: center;
+  transition: border-bottom 0.2s;
+}
+.navHeader__itemList:hover {
+  border-bottom: 3px solid #00aeef;
+  /* You can adjust color and thickness as needed */
+  background: #f7faff;
 }
 .navHeader--title {
   color: #222;
@@ -37,8 +43,8 @@
 }
 .navHeader--title:hover,
 .navHeader__itemList.active .navHeader--title {
-  background: #e30613;
-  color: #fff;
+  // background: #e30613;
+  // color: #fff;
 }
 .dropdown__wrapper {
   position: absolute;
@@ -159,4 +165,4 @@
     flex-direction: column;
     gap: 1rem;
   }
-} 
+}

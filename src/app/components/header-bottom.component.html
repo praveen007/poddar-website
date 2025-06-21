@@ -1,53 +1,63 @@
 <div class="navHeader__itemWrapper">
   <ul class="navHeader__list resp">
-    <app-nav-dropdown
-      label="About us"
-      [items]="aboutItems"
-      [open]="openDropdown === 'about'"
-      (openMenu)="!isMobile && openMenu('about')"
-      (closeMenu)="!isMobile && closeMenu()"
-      (toggleMenu)="isMobile && toggleMenu('about')">
-    </app-nav-dropdown>
-    <app-mega-menu
-      label="Products and Solutions"
-      [columns]="productsColumns"
-      [open]="openDropdown === 'products'"
-      (openMenu)="!isMobile && openMenu('products')"
-      (closeMenu)="!isMobile && closeMenu()"
-      (toggleMenu)="isMobile && toggleMenu('products')">
-    </app-mega-menu>
-    <app-nav-dropdown
-      label="Services & Offerings"
-      [items]="servicesItems"
-      [open]="openDropdown === 'services'"
-      (openMenu)="!isMobile && openMenu('services')"
-      (closeMenu)="!isMobile && closeMenu()"
-      (toggleMenu)="isMobile && toggleMenu('services')">
-    </app-nav-dropdown>
-    <app-nav-dropdown
-      label="Careers"
-      [items]="careersItems"
-      [open]="openDropdown === 'careers'"
-      (openMenu)="!isMobile && openMenu('careers')"
-      (closeMenu)="!isMobile && closeMenu()"
-      (toggleMenu)="isMobile && toggleMenu('careers')">
-    </app-nav-dropdown>
+    <li class="navHeader__itemList">
+      <app-nav-dropdown
+        label="About us"
+        [items]="aboutItems"
+        [open]="openDropdown === 'about'"
+        (openMenu)="!isMobile && openMenu('about')"
+        (closeMenu)="!isMobile && closeMenu()"
+        (toggleMenu)="isMobile && toggleMenu('about')">
+      </app-nav-dropdown>
+    </li>
+    <li class="navHeader__itemList">
+      <app-mega-menu
+        label="Products and Solutions"
+        [menu]="productsColumns"
+        [open]="openDropdown === 'products'"
+        (openMenu)="!isMobile && openMenu('products')"
+        (closeMenu)="!isMobile && closeMenu()"
+        (toggleMenu)="isMobile && toggleMenu('products')">
+      </app-mega-menu>
+    </li>
+    <li class="navHeader__itemList">
+      <app-nav-dropdown
+        label="Services & Offerings"
+        [items]="servicesItems"
+        [open]="openDropdown === 'services'"
+        (openMenu)="!isMobile && openMenu('services')"
+        (closeMenu)="!isMobile && closeMenu()"
+        (toggleMenu)="isMobile && toggleMenu('services')">
+      </app-nav-dropdown>
+    </li>
+    <li class="navHeader__itemList">
+      <app-nav-dropdown
+        label="Careers"
+        [items]="careersItems"
+        [open]="openDropdown === 'careers'"
+        (openMenu)="!isMobile && openMenu('careers')"
+        (closeMenu)="!isMobile && closeMenu()"
+        (toggleMenu)="isMobile && toggleMenu('careers')">
+      </app-nav-dropdown>
+    </li>
     <li class="navHeader__itemList">
       <a class="navHeader--title" href="/news-and-media">News &amp; Events</a>
     </li>
     <li class="navHeader__itemList">
       <a class="navHeader--title" href="/csr">CSR</a>
     </li>
-    <app-nav-dropdown
-      label="Resources"
-      [items]="resourcesItems"
-      [open]="openDropdown === 'resources'"
-      (openMenu)="!isMobile && openMenu('resources')"
-      (closeMenu)="!isMobile && closeMenu()"
-      (toggleMenu)="isMobile && toggleMenu('resources')">
-    </app-nav-dropdown>
+    <li class="navHeader__itemList">
+      <app-nav-dropdown
+        label="Resources"
+        [items]="resourcesItems"
+        [open]="openDropdown === 'resources'"
+        (openMenu)="!isMobile && openMenu('resources')"
+        (closeMenu)="!isMobile && closeMenu()"
+        (toggleMenu)="isMobile && toggleMenu('resources')">
+      </app-nav-dropdown>
+    </li>
     <li class="navHeader__itemList">
       <a class="navHeader--title" href="/contact-us">Contact us</a>
     </li>
   </ul>
-</div> 
+</div>

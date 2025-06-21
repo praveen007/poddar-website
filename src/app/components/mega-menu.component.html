@@ -1,4 +1,4 @@
-<div class="navHeader__itemList has__navList w-nav"
+<!-- <div class="navHeader__itemList has__navList w-nav"
      (mouseenter)="openMenu.emit()"
      (mouseleave)="closeMenu.emit()"
      (click)="toggleMenu.emit()">
@@ -22,4 +22,29 @@
       </div>
     </div>
   </div>
-</div> 
+</div>  -->
+
+<li class="mega-menu-wrapper" (mouseenter)="setOpen(true)"
+    (mouseleave)="setOpen(false)">
+  <a class="nav-link">{{ label }} ▾</a>
+
+  <div class="mega-dropdown" *ngIf="isOpen">
+    <div class="categories">
+      <div *ngFor="let cat of menu; let i = index"
+           class="category"
+           [class.active]="i === activeCategoryIndex"
+           (mouseenter)="setActive(i)">
+        {{ cat.category }}
+      </div>
+    </div>
+
+    <div class="items">
+      <div *ngFor="let item of activeItems" class="item">
+        <div class="item-title">
+          <img *ngIf="item.image" [src]="item.image" alt="" />
+          <a [href]="item.url">{{ item.title }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>

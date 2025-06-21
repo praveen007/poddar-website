@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavDropdownComponent, NavDropdownItem } from './nav-dropdown.component';
-import { MegaMenuComponent, MegaMenuColumn } from './mega-menu.component';
+import { MegaMenuComponent, MegaMenuColumn, MegaMenuItem } from './mega-menu.component';
 
 @Component({
   selector: 'app-header-bottom',
@@ -35,19 +35,37 @@ export class HeaderBottomComponent {
     { label: 'Downloads', href: 'https://www.ashirvad.com/downloads/' }
   ];
 
-  productsColumns: MegaMenuColumn[] = [
-    {
-      heading: 'CPVC Range (Hot and Cold)',
-      items: [
-        {
-          label: 'Ashirvad FlowGuard-Plus® CPVC',
-          href: 'https://www.ashirvad.com/solution/cpvc-pipes-fittings/',
-          img: 'https://www.ashirvad.com/wp-content/uploads/2021/04/CPVC_FlowGuard-Plus_Cluster-1.png'
-        }
-      ]
-    }
-    // Add more columns as needed
-  ];
+  productsColumns: MegaMenuItem[] = [
+  {
+    category: 'Plumbing Pipes and Fittings',
+    items: [
+      { title: 'CPVC Range (Hot and Cold)', url: '/cpvc', image: 'assets/cpvc.png' },
+      { title: 'UPVC Range (Cold Water)', url: '/upvc', image: 'assets/upvc.png' },
+    ]
+  },
+  {
+    category: 'Agriculture Pipes and Fittings',
+    items: [
+      { title: 'Irrigation Pipes', url: '/irrigation' }
+    ]
+  }
+];
+  
+  // [
+  //   {
+  //     heading: 'CPVC Range (Hot and Cold)',
+  //     items: [
+  //       {
+  //         label: 'Ashirvad FlowGuard-Plus® CPVC',
+  //         href: 'https://www.ashirvad.com/solution/cpvc-pipes-fittings/',
+  //         img: 'https://www.ashirvad.com/wp-content/uploads/2021/04/CPVC_FlowGuard-Plus_Cluster-1.png'
+  //       }
+  //     ]
+  //   }
+  //   // Add more columns as needed
+  // ];
+
+  
 
   openMenu(name: string) { this.openDropdown = name; }
   closeMenu() { this.openDropdown = null; }
