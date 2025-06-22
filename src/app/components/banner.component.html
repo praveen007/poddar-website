@@ -19,10 +19,16 @@
         </div>
       </div>
     </div>
-    <button class="banner-nav prev scroll-scale" (click)="prev()" aria-label="Previous slide">&#10094;</button>
-    <button class="banner-nav next scroll-scale" (click)="next()" aria-label="Next slide">&#10095;</button>
+    <button class="banner-nav prev" (click)="prev()" aria-label="Previous slide">&#10094;</button>
+    <button class="banner-nav next" (click)="next()" aria-label="Next slide">&#10095;</button>
     <div class="banner-dots scroll-fade-in">
       <button *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex" (click)="goTo(i)" aria-label="Go to slide"></button>
     </div>
+  </div>
+  <div class="bg-circle">
+    <svg viewBox="0 0 100 6.1">
+      <path d="M 0 10, 0 0 q 50 12.2 100 0, 100 10, 0 10" fill="#000000" stroke="none" stroke-width="1">
+      </path>
+    </svg>
   </div>
 </div> 

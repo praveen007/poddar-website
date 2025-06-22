@@ -27,12 +27,12 @@ export class BannerComponent implements OnInit {
       img: 'assets/banner/banner-2.jpg',
       imgMobile: 'https://www.ashirvad.com/wp-content/uploads/2024/08/Mobile-Ashirvad-Banner-5.png',
       alt: 'Banner 5',
-      heading: ''
+      heading: 'Spearheading research. Leading change.'
     },
     {
       img: 'assets/banner/banner-3.png',
       alt: 'Water Piping Technology',
-      heading: 'Spearheading research. Leading change.'
+      heading: ''
     },
     {
       img: 'assets/banner/banner-5.jpg',

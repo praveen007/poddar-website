@@ -1,51 +1,147 @@
 .counter-section-wrapper {
   width: 100%;
-  background: #f5f5f5;
+  background: linear-gradient(135deg, #d774ae 0%, #d04460 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+  }
 }
 
 .counter-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .counter-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 140px;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+  }
+
+  &:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+
+    &::before {
+      left: 100%;
+    }
+  }
+
+  &:hover .counter-value {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
 }
 
 .counter-value {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #d32f2f;
-  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
 }
 
 .counter-label {
-  font-size: 1.1rem;
-  color: #333;
-  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    // background: linear-gradient(90deg, #e60000, #c30000);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 }
 
-@media (max-width: 600px) {
+.counter-item:hover .counter-label::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .counter-section-wrapper {
+    padding: 3rem 1rem;
+  }
+
   .counter-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .counter-item {
+    padding: 1.5rem 1rem;
+  }
+
+  .counter-value {
+    font-size: 2.5rem;
+  }
+
+  .counter-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-list {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  .counter-item {
-    min-width: 100px;
-  }
+
   .counter-value {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
+
   .counter-label {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 } 
