@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ProductsTabsComponent } from '../../components/products-tabs.component';
 import { BannerComponent } from '../../components/banner.component';
 import { AdvantageTabsComponent } from '../../components/advantage-tabs.component';
 import { CounterSectionComponent } from '../../components/counter-section.component';
@@ -16,7 +15,6 @@ import { AnimateOnScrollDirective } from '../../shared/animate-on-scroll.directi
   standalone: true,
   imports: [
     ProductTabsComponent,
-    //ProductsTabsComponent,
     BannerComponent,
     AdvantageTabsComponent,
     CounterSectionComponent,

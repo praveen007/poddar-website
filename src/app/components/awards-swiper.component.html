@@ -1,5 +1,5 @@
 <div class="awards-swiper-custom-wrapper">
-  <button class="swiper-nav prev" (click)="prev()" [disabled]="currentIndex === 0">&#8592;</button>
+  <button class="swiper-nav prev" (click)="prev()" [disabled]="currentIndex === 0">&#x3C;</button>
   <div class="awards-swiper-card" *ngIf="awards.length">
     <div class="awards-swiper-img-wrap">
       <img [src]="awards[currentIndex].img" [alt]="awards[currentIndex].title" class="awards-swiper-img" />
@@ -9,7 +9,7 @@
       <div class="awards-swiper-desc">{{ awards[currentIndex].description }}</div>
     </div>
   </div>
-  <button class="swiper-nav next" (click)="next()" [disabled]="currentIndex === awards.length - 1">&#8594;</button>
+  <button class="swiper-nav next" (click)="next()" [disabled]="currentIndex === awards.length - 1">&#x3E;</button>
 </div>
 <div class="awards-swiper-dots">
   <span *ngFor="let award of awards; let i = index" class="dot" [class.active]="i === currentIndex" (click)="currentIndex = i"></span>
