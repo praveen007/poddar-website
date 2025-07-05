@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 interface Award {
@@ -15,7 +15,7 @@ interface Award {
   styleUrls: ['./awards-swiper.component.scss']
 })
 export class AwardsSwiperComponent {
-  awards: Award[] = [
+  @Input() awards: Award[] = [
     {
       title: 'NABL Accreditation',
       description: 'ISO 17025 accreditation granted to Aliaxis Research and Technology Center Asia Laboratory in India by GoI',
@@ -44,6 +44,15 @@ export class AwardsSwiperComponent {
   ];
 
   currentIndex = 0;
+  awardsPerView = 4;
+
+  get visibleAwards(): Award[] {
+    return this.awards.slice(this.currentIndex, this.currentIndex + this.awardsPerView);
+  }
+
+  get maxIndex(): number {
+    return Math.max(0, this.awards.length - this.awardsPerView);
+  }
 
   prev() {
     if (this.currentIndex > 0) {
@@ -52,8 +61,20 @@ export class AwardsSwiperComponent {
   }
 
   next() {
-    if (this.currentIndex < this.awards.length - 1) {
+    if (this.currentIndex < this.maxIndex) {
       this.currentIndex++;
     }
+  }
+
+  goToSlide(index: number) {
+    this.currentIndex = Math.min(index, this.maxIndex);
+  }
+
+  get isPrevDisabled(): boolean {
+    return this.currentIndex === 0;
+  }
+
+  get isNextDisabled(): boolean {
+    return this.currentIndex >= this.maxIndex;
   }
 } 

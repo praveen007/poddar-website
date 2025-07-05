@@ -1,0 +1,136 @@
+<!-- About Us Hero Section -->
+<app-hero-section
+  title="Why Astral Pipes"
+  subtitle="Born In Gujarat, India. Making Waves Across The World. Astral stands for innovation and setting new trends in the piping industry. Bringing newer piping technologies and continuous innovation in existing as well as new products has been the focal point at Astral. This special emphasis helps the brand set the bar higher and lead amongst others by example. Astral is also known for its compromise-free quality and exceeding consumer's expectations. Right from introducing new piping technologies to innovative brand communications, Astral's brand mission has been to maintain and grow a commanding presence in the minds of customers and to deliver promised values, consistently."
+></app-hero-section>
+
+<!-- About Us Main Content -->
+<section class="about-main-content">
+  <!-- About Image and Intro -->
+  <div class="about-intro container sectionSpacing">
+    <div class="row gx-lg-5 justify-content-md-center justify-content-lg-end align-items-center overflow-hidden">
+      <div class="col-lg-6 order-lg-12 animateThis slideRight in-view">
+        <h2 class="about-intro__title">Born In Gujarat, India <br> Making Waves Across The World</h2>
+        <p>
+          Astral stands for innovation and setting new trends in the piping industry. Bringing newer piping technologies and continuous innovation in existing as well as new products has been the focal point at Astral. This special emphasis helps the brand set the bar higher and lead amongst others by example.<br><br>
+          Astral is also known for its compromise-free quality and exceeding consumer's expectations. Right from introducing new piping technologies to innovative brand communications, Astral's brand mission has been to maintain and grow a commanding presence in the minds of customers and to deliver promised values, consistently.
+        </p>
+      </div>
+      <div class="col-md-8 col-lg-6 mb-lg-0 mb-5 animateThis slideLeft pe-lg-3 aboutImage1 in-view">
+        <div class="abtPic">
+          <img src="https://www.astralpipes.com/wp-content/uploads/2023/06/aboutImg-1.jpg" alt="Astral Pipes About" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Counter Section -->
+  <app-about-stats-counter></app-about-stats-counter>
+
+  <!-- Milestones Section -->
+  <div class="container-fluild sectionSpacing milestoneWrap">
+    <div class="container">
+      <h2 class="text-center text-white mb-4">Our Milestones</h2>
+      <app-milestone-swiper [milestones]="milestones"></app-milestone-swiper>
+    </div>
+  </div>
+
+  <!-- Manufacturing Units Section -->
+  <div class="container sectionSpacing">
+    <h2 class="text-center">Our Manufacturing Units</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-11 text-center">
+        <p>
+          Astral Pipes is equipped with state-of-the-art production facilities across the country which enables it to meet the requirements of various geographies and markets. Our backward integration capabilities for CPVC compounding enable us to become a genuine Indian Manufacturer. Our 14 manufacturing units across the country have automated material handling and feeding systems. Astral Production process and control are based on the SCADA system and we have an in-house QC department to keep close control over the production quality. Our pipes manufacturing units are:
+        </p>
+      </div>
+    </div>
+    <div class="row plantSlider justify-content-center">
+      <div class="col-6 col-md-3 mb-4" *ngFor="let plant of plants">
+        <div class="plantPic position-relative mb-3">
+          <img [src]="plant.img" [alt]="plant.location" />
+        </div>
+        <div class="platBrief">
+          <p><span>{{ plant.location }}</span></p>
+          <p><span>{{ plant.products }}</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Awards Section -->
+  <div class="container awardsWrap sectionSpacing">
+    <div class="row gx-5">
+      <div class="col-md-6">
+        <div class="awardBrief">
+          <h2 class="mb-3">Awards And Recognitions</h2>
+          <p>
+            Astral consistently leads the way in terms of innovation and technology, earning numerous prestigious awards and accolades in the process. The brand's commitment to pushing boundaries and setting new standards has been recognized and honored time and again.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="awardPic">
+          <img src="https://www.astralpipes.com/wp-content/uploads/2023/08/MicrosoftTeams-image-179-4.jpg" class="w-100 d-block" alt="Awards" />
+        </div>
+      </div>
+    </div>
+    <app-awards-swiper [awards]="awards"></app-awards-swiper>
+  </div>
+
+  <!-- Company Info Section -->
+  <div class="container-fluid greyBg sectionSpacing">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-md-0 mb-4 order-md-2">
+          <h2 class="mb-4 about_company_">Astral Pipes is a Prominent brand name in the Indian Home Building Material Space.</h2>
+          <p>
+            The Company is India's leading manufacturer of <span class="blueColor">plastic pipes</span>, a well-footed player in the adhesives business, and is now making strong inroads in the paints, faucets, and sanitary ware segments. Our leadership position is backed by a strong foundation of business fundamentals, which includes manufacturing units across multiple locations, a wide range of products, a well-known brand, a wide distribution network, and an experienced management team. In recent years, the Company has consistently outpaced the industry growth rate and emerged as one of the top brands in the country. Faced with unprecedented obstacles, our resilience and operational excellence have strengthened our position as the dominant force even further.
+          </p>
+        </div>
+        <div class="col-md-6 about_company_about_company_">
+          <img src="https://www.astralpipes.com/wp-content/uploads/2023/07/MicrosoftTeams-image-163.png" alt="Astral Company" class="w-100 d-block" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Business Verticals Section -->
+  <div class="container sectionSpacing">
+    <div class="text-center mb-5">
+      <h2 class="business-verticals-title">Our Business Verticals</h2>
+      <p class="business-verticals-subtitle">
+        Astral has diversified into multiple business verticals to provide comprehensive solutions for home building materials.
+      </p>
+    </div>
+    <div class="business-verticals-grid">
+      <div class="business-vertical-item" *ngFor="let vertical of businessVerticals">
+        <a [href]="vertical.link" target="_blank" class="business-logo-link">
+          <div class="business-logo-container">
+            <img [src]="vertical.img" [alt]="vertical.name" class="business-logo-img" />
+          </div>
+          <div class="business-logo-name">{{ vertical.name }}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team, Testimonials, Contact CTA -->
+  <app-section-title title="Our Team"></app-section-title>
+  <app-team-grid></app-team-grid>
+  <app-section-title title="What Our Clients Say"></app-section-title>
+  <app-testimonial-slider></app-testimonial-slider>
+  <app-contact-cta></app-contact-cta>
+</section>
+
+<footer class="position-relative">
+  <div class="footerBg">
+    <li class="menu-item menu-li"><a href="https://www.astralpipes.com/piping-guidelines/">Piping Guidelines</a></li>
+    <li class="menu-item menu-li"><a href="https://www.astralpipes.com/careers/">careers</a></li>
+  </div>
+  <div class="container partnerAssociated sectionSpacing"></div>
+  <br>
+  <div>
+    Please note that the claim "India's No. 1 Pipe Brand" is based on findings from TRA's Brand Reports spanning from 2016, 2019 to 2024, along with Superbrands awards received in 2017, 2019, 2020, 2021-2022, and 2023. Also, Astral Pipes has been ranked as The Most Desired Brand in the studies conducted by TRA. These accolades suggest a strong market presence and consumer recognition, and it's important to consider various factors that influence brand rankings and perceptions. This claim should be interpreted within the context of the specific reports and awards mentioned. Such consumer preferences, market dynamics, and methodologies employed in brand assessments impact the positioning of brands within the respective industries.
+  </div>
+</footer>

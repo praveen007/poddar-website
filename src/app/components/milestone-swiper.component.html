@@ -1,0 +1,23 @@
+<div class="milestone-swiper-custom-wrapper">
+  <button class="swiper-nav prev" (click)="prev()" [disabled]="isPrevDisabled">&#x3C;</button>
+  
+  <div class="milestones-container">
+    <ng-container *ngIf="visibleMilestones.length">
+      <div class="milestone-swiper-card" *ngFor="let milestone of visibleMilestones">
+        <div class="milestone-year">{{ milestone.year }}</div>
+        <div class="milestone-event">{{ milestone.event }}</div>
+      </div>
+    </ng-container>
+  </div>
+  
+  <button class="swiper-nav next" (click)="next()" [disabled]="isNextDisabled">&#x3E;</button>
+</div>
+
+<div class="milestone-swiper-dots">
+  <span 
+    *ngFor="let milestone of milestones; let i = index" 
+    class="dot" 
+    [class.active]="i >= currentIndex && i < currentIndex + milestonesPerView" 
+    (click)="goToSlide(i)"
+  ></span>
+</div> 

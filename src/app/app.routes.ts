@@ -5,7 +5,7 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'about-us',
-    loadComponent: () => import('./components/about-us/about-us.component').then(m => m.AboutUsComponent)
+    loadComponent: () => import('./features/about/about-us-page.component').then(m => m.AboutUsPageComponent)
   },
   {
     path: 'who-we-are',
