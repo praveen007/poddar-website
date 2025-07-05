@@ -1,0 +1,20 @@
+.products-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.products-container.scrollable {
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #e53935 #f8f8f8;
+}
+
+@media (max-width: 600px) {
+  .products-container,
+  .products-container.scrollable {
+    padding: 0.5rem;
+    max-width: 100vw;
+  }
+}

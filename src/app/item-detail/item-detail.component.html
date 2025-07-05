@@ -1,0 +1,14 @@
+<div class="item-detail-container">
+  <div class="item-image">
+    <img [src]="imageSrc" [alt]="title" />
+  </div>
+  <div class="item-content">
+    <div *ngIf="badgeText" class="item-badge">{{ badgeText }}</div>
+    <h2 class="item-title">{{ title }}</h2>
+    <div *ngIf="subtitle" class="item-subtitle">{{ subtitle }}</div>
+    <div class="item-description" [innerHTML]="description"></div>
+    <ul class="item-features" *ngIf="features?.length">
+      <li *ngFor="let feature of features">{{ feature }}</li>
+    </ul>
+  </div>
+</div>
