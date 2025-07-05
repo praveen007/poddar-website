@@ -1,0 +1,13 @@
+<section class="mission_vision_card_container bg-black py-80">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-10 mx-auto">
+        <div class="row" data-aos="fade-up">
+          <div class="col-12 col-md-12 col-lg-6" *ngFor="let card of cards">
+            <app-mission-vision-card [img]="card.img" [title]="card.title" [text]="card.text"></app-mission-vision-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 

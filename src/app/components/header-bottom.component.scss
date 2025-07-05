@@ -15,7 +15,7 @@
 .navHeader__list.resp {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@
   }
 }
 .navHeader__itemList:hover {
-  border-bottom: 3px solid #00aeef;
+  border-bottom: 3px solid #292f73;
   /* You can adjust color and thickness as needed */
   background: #f7faff;
 }
@@ -48,7 +48,7 @@
 }
 .navHeader--title:hover,
 .navHeader__itemList.active .navHeader--title {
-  // background: #e30613;
+  // background: #ee202e;
   // color: #fff;
 }
 .dropdown__wrapper {
@@ -84,7 +84,7 @@
   transition: color 0.2s;
 }
 .navHeader__innerListItem a:hover {
-  color: #e30613;
+  color: #ee202e;
 }
 .row.height-fix {
   display: flex;
@@ -111,7 +111,7 @@
 .list-heading {
   font-size: 1.05rem;
   font-weight: 600;
-  color: #e30613;
+  color: #ee202e;
   margin: 1rem 0 0.5rem 0;
 }
 .cardtwo {
@@ -128,7 +128,7 @@
 }
 .cardtwo:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  color: #e30613;
+  color: #ee202e;
 }
 .image-container {
   width: 60px;

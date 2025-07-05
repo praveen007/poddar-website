@@ -36,11 +36,11 @@
 }
 .advantage-tab-btn.active {
   border-bottom: 2px solid #fff;
-  border-top: 2px solid #e30613;
+  border-top: 2px solid #ee202e;
   background: #f5f5f5;
 }
 .advantage-tab-btn:hover {
-  border-top: 2px solid #e30613;
+  border-top: 2px solid #ee202e;
 }
 .advantage-tab-icon {
   width: 40px;
@@ -62,7 +62,7 @@
 }
 .advantage-tab-content h3 {
   margin-top: 0;
-  color: #e30613;
+  color: #ee202e;
   font-size: 1.3rem;
 }
 .advantage-tab-content p {
@@ -91,18 +91,13 @@
 
 // Section Container
 .tabs__container {
-  padding: 4rem 0;
-  background: #f8f9fa;
+
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
   }
-}
-
-.section__padding {
-  padding: 4rem 0;
 }
 
 // Section Heading
@@ -115,7 +110,6 @@
     font-weight: 700;
     color: #333;
     margin-bottom: 1.5rem;
-    font-family: 'Open Sans', sans-serif;
     
     @media (max-width: 768px) {
       font-size: 2rem;
@@ -128,7 +122,7 @@
     color: #666;
     max-width: 800px;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+
     
     @media (max-width: 768px) {
       font-size: 1rem;
@@ -170,7 +164,7 @@
     }
     
     &.active {
-      background: #e30613;
+      background: #ee202e;
       color: white;
       
       .media-body h5 {
@@ -180,10 +174,10 @@
     
     &:hover {
       background: #f8f9fa;
-      color: #e30613;
+      color: #ee202e;
       
       .media-body h5 {
-        color: #e30613;
+        color: #ee202e;
       }
     }
     
@@ -221,7 +215,6 @@
         font-weight: 600;
         color: #333;
         transition: color 0.3s ease;
-        font-family: 'Open Sans', sans-serif;
         
         @media (max-width: 768px) {
           font-size: 0.9rem;
@@ -278,7 +271,7 @@
           margin: 0 0 1rem 0;
           color: white;
           font-weight: 700;
-          font-family: 'Open Sans', sans-serif;
+    
           text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
           
           @media (max-width: 768px) {
@@ -291,7 +284,7 @@
           line-height: 1.7;
           color: white;
           margin: 0;
-          font-family: 'Open Sans', sans-serif;
+        
           text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
           
           @media (max-width: 768px) {

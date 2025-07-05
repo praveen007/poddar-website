@@ -1,0 +1,27 @@
+<section class="about-us-banner">
+  <div class="banner-bg" [ngStyle]="{ 'background-image': 'url(' + backgroundImage + ')' }">
+    <div class="banner_contents_wrapper">
+      <div class="container h-100">
+        <nav aria-label="breadcrumb" class="breadcrumb__wrapper">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item disabled"><a href="javascript:void(0)">About us</a></li>
+            <li aria-current="page" class="breadcrumb-item active">{{ title }}</li>
+          </ol>
+        </nav>
+        <div class="row align-items-center h-90">
+          <div class="col-12 col-md-11 col-lg-10 mx-auto">
+            <div class="banner_contents">
+              <h1>{{ title }}</h1>
+              <p>{{ description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="circle">
+    <svg viewBox="0 0 100 6.1">
+      <path d="M 0 10, 0 0 q 50 12.2 100 0, 100 10, 0 10" fill="#000000" stroke="none" stroke-width="1"></path>
+    </svg>
+  </div>
+</section> 

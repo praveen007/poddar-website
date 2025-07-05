@@ -1,0 +1,23 @@
+<section class="get__featured__wrapper py-80">
+  <div class="custom__container">
+    <div class="row align-items-center pb-4">
+      <div class="col-12 col-md-7 col-lg-6 order-1">
+        <div class="section-headings" data-aos="fade-up">
+          <h2>Gallery</h2>
+          <p>
+            With over 25 years of history, our journey is all about providing people around the world with advanced plastic piping systems that is sustainable, innovative, and follow international standards of quality certifications.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 pr-lg-2 pr-0 order-1 order-md-3">
+        <div class="gallery-cards-container" data-aos="fade-up">
+          <div class="gallery-cards-wrapper" style="display: flex; overflow-x: auto; gap: 16px;">
+            <div class="gallery-card" *ngFor="let image of images">
+              <img [src]="image.src" [alt]="image.alt" style="max-width: 200px; border-radius: 8px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
