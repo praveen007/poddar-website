@@ -1,0 +1,15 @@
+<div class="products-container">
+  <app-item-detail
+    [imageSrc]="product.imageSrc"
+    [title]="product.title"
+    [subtitle]="product.subtitle"
+    [description]="product.description"
+    [features]="product.features"
+    [badgeText]="product.badgeText">
+  </app-item-detail>
+  <app-tabbed-box
+    [tabs]="productTabs"
+    [activeIndex]="0"
+    (tabChanged)="onTabChanged($event)">
+  </app-tabbed-box>
+</div>
