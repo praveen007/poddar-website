@@ -1,43 +1,43 @@
 <!-- About Us Hero Section -->
 <app-hero-section
-  title="Why Astral Pipes"
-  subtitle="Born In Gujarat, India. Making Waves Across The World. Astral stands for innovation and setting new trends in the piping industry. Bringing newer piping technologies and continuous innovation in existing as well as new products has been the focal point at Astral. This special emphasis helps the brand set the bar higher and lead amongst others by example. Astral is also known for its compromise-free quality and exceeding consumer's expectations. Right from introducing new piping technologies to innovative brand communications, Astral's brand mission has been to maintain and grow a commanding presence in the minds of customers and to deliver promised values, consistently."
+  title=""
 ></app-hero-section>
 
 <!-- About Us Main Content -->
-<section class="about-main-content">
+<div class="about-main-content">
   <!-- About Image and Intro -->
   <div class="about-intro container sectionSpacing">
-    <div class="row gx-lg-5 justify-content-md-center justify-content-lg-end align-items-center overflow-hidden">
-      <div class="col-lg-6 order-lg-12 animateThis slideRight in-view">
-        <h2 class="about-intro__title">Born In Gujarat, India <br> Making Waves Across The World</h2>
+    <div class="about-intro-flex">
+      <div class="abtPic">
+        <img src="https://www.astralpipes.com/wp-content/uploads/2023/06/aboutImg-1.jpg" alt="Astral Pipes About" />
+      </div>
+      <div class="about-intro-content">
+        <h2 class="about-intro__title">Why Astral Pipes</h2> 
+        <h3 style="color: #ee202e;"> Born In Gujarat, India. Making Waves Across The World.</h3>
         <p>
           Astral stands for innovation and setting new trends in the piping industry. Bringing newer piping technologies and continuous innovation in existing as well as new products has been the focal point at Astral. This special emphasis helps the brand set the bar higher and lead amongst others by example.<br><br>
           Astral is also known for its compromise-free quality and exceeding consumer's expectations. Right from introducing new piping technologies to innovative brand communications, Astral's brand mission has been to maintain and grow a commanding presence in the minds of customers and to deliver promised values, consistently.
         </p>
       </div>
-      <div class="col-md-8 col-lg-6 mb-lg-0 mb-5 animateThis slideLeft pe-lg-3 aboutImage1 in-view">
-        <div class="abtPic">
-          <img src="https://www.astralpipes.com/wp-content/uploads/2023/06/aboutImg-1.jpg" alt="Astral Pipes About" />
-        </div>
-      </div>
     </div>
   </div>
 
   <!-- Stats Counter Section -->
-  <app-about-stats-counter></app-about-stats-counter>
+  <div class="stats-counter-section">
+    <app-about-stats-counter></app-about-stats-counter>
+  </div>
 
   <!-- Milestones Section -->
-  <div class="container-fluild sectionSpacing milestoneWrap">
+  <div class="milestones-section container-fluild sectionSpacing milestoneWrap">
     <div class="container">
-      <h2 class="text-center text-white mb-4">Our Milestones</h2>
+      <h2 class="text-center text-white mb-4 about-intro__title">Our Milestones</h2>
       <app-milestone-swiper [milestones]="milestones"></app-milestone-swiper>
     </div>
   </div>
 
   <!-- Manufacturing Units Section -->
-  <div class="container sectionSpacing">
-    <h2 class="text-center">Our Manufacturing Units</h2>
+  <div class="manufacturing-units-section container sectionSpacing">
+    <h2 class="text-center about-intro__title">Our Manufacturing Units</h2>
     <div class="row justify-content-center">
       <div class="col-md-11 text-center">
         <p>
@@ -45,25 +45,29 @@
         </p>
       </div>
     </div>
-    <div class="row plantSlider justify-content-center">
-      <div class="col-6 col-md-3 mb-4" *ngFor="let plant of plants">
-        <div class="plantPic position-relative mb-3">
-          <img [src]="plant.img" [alt]="plant.location" />
-        </div>
-        <div class="platBrief">
-          <p><span>{{ plant.location }}</span></p>
-          <p><span>{{ plant.products }}</span></p>
+    <div class="plant-slider-wrapper">
+      <button class="plant-slider-nav prev" (click)="prevPlant()" [disabled]="plantSliderIndex === 0">&#x3C;</button>
+      <div class="plant-slider-container">
+        <div class="plant-card" *ngFor="let plant of visiblePlants">
+          <div class="plantPic position-relative mb-3">
+            <img [src]="plant.img" [alt]="plant.location" />
+          </div>
+          <div class="platBrief">
+            <p><span>{{ plant.location }}</span></p>
+            <p><span>{{ plant.products }}</span></p>
+          </div>
         </div>
       </div>
+      <button class="plant-slider-nav next" (click)="nextPlant()" [disabled]="plantSliderIndex >= maxPlantSliderIndex">&#x3E;</button>
     </div>
   </div>
 
   <!-- Awards Section -->
-  <div class="container awardsWrap sectionSpacing">
+  <div class="awards-section container awardsWrap sectionSpacing">
     <div class="row gx-5">
       <div class="col-md-6">
         <div class="awardBrief">
-          <h2 class="mb-3">Awards And Recognitions</h2>
+          <h2 class="mb-3 about-intro__title">Awards And Recognitions</h2>
           <p>
             Astral consistently leads the way in terms of innovation and technology, earning numerous prestigious awards and accolades in the process. The brand's commitment to pushing boundaries and setting new standards has been recognized and honored time and again.
           </p>
@@ -79,7 +83,7 @@
   </div>
 
   <!-- Company Info Section -->
-  <div class="container-fluid greyBg sectionSpacing">
+  <div class="company-info-section container-fluid greyBg sectionSpacing">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 mb-md-0 mb-4 order-md-2">
@@ -96,9 +100,9 @@
   </div>
 
   <!-- Business Verticals Section -->
-  <div class="container sectionSpacing">
+  <div class="business-verticals-section container sectionSpacing">
     <div class="text-center mb-5">
-      <h2 class="business-verticals-title">Our Business Verticals</h2>
+      <h2 class="about-intro__title">Our Business Verticals</h2>
       <p class="business-verticals-subtitle">
         Astral has diversified into multiple business verticals to provide comprehensive solutions for home building materials.
       </p>
@@ -116,21 +120,10 @@
   </div>
 
   <!-- Team, Testimonials, Contact CTA -->
-  <app-section-title title="Our Team"></app-section-title>
-  <app-team-grid></app-team-grid>
-  <app-section-title title="What Our Clients Say"></app-section-title>
-  <app-testimonial-slider></app-testimonial-slider>
-  <app-contact-cta></app-contact-cta>
-</section>
-
-<footer class="position-relative">
-  <div class="footerBg">
-    <li class="menu-item menu-li"><a href="https://www.astralpipes.com/piping-guidelines/">Piping Guidelines</a></li>
-    <li class="menu-item menu-li"><a href="https://www.astralpipes.com/careers/">careers</a></li>
+  <div class="team-testimonials-section container sectionSpacing">
+    <app-section-title class="about-intro__title" title="Our Team"></app-section-title>
+    <app-team-grid></app-team-grid>
+    <app-section-title class="about-intro__title" title="What Our Clients Say"></app-section-title>
+    <app-testimonial-slider></app-testimonial-slider>
   </div>
-  <div class="container partnerAssociated sectionSpacing"></div>
-  <br>
-  <div>
-    Please note that the claim "India's No. 1 Pipe Brand" is based on findings from TRA's Brand Reports spanning from 2016, 2019 to 2024, along with Superbrands awards received in 2017, 2019, 2020, 2021-2022, and 2023. Also, Astral Pipes has been ranked as The Most Desired Brand in the studies conducted by TRA. These accolades suggest a strong market presence and consumer recognition, and it's important to consider various factors that influence brand rankings and perceptions. This claim should be interpreted within the context of the specific reports and awards mentioned. Such consumer preferences, market dynamics, and methodologies employed in brand assessments impact the positioning of brands within the respective industries.
-  </div>
-</footer>
+</div>

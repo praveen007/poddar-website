@@ -20,7 +20,7 @@ import { MilestoneSwiperComponent } from '../../components/milestone-swiper.comp
     SectionTitleComponent,
     TeamGridComponent,
     TestimonialSliderComponent,
-    ContactCtaComponent,
+    //ContactCtaComponent,
     AboutStatsCounterComponent,
     AwardsSwiperComponent,
     MilestoneSwiperComponent
@@ -64,6 +64,29 @@ export class AboutUsPageComponent {
     { location: 'Sitarganj, Uttarakhand', products: 'Pipes & Fittings', img: 'https://www.astralpipes.com/wp-content/uploads/2023/06/Sittarganj.jpg' },
     { location: 'Cuttack, Odisha, India', products: 'Pipes, Fittings & Tanks', img: 'https://www.astralpipes.com/wp-content/uploads/2023/06/Cuttack1.jpg' }
   ];
+
+  plantSliderIndex = 0;
+  plantsPerView = 4;
+
+  get visiblePlants() {
+    return this.plants.slice(this.plantSliderIndex, this.plantSliderIndex + this.plantsPerView);
+  }
+
+  get maxPlantSliderIndex() {
+    return Math.max(0, this.plants.length - this.plantsPerView);
+  }
+
+  prevPlant() {
+    if (this.plantSliderIndex > 0) {
+      this.plantSliderIndex--;
+    }
+  }
+
+  nextPlant() {
+    if (this.plantSliderIndex < this.maxPlantSliderIndex) {
+      this.plantSliderIndex++;
+    }
+  }
 
   awards = [
     { title: 'Consumer Validated Superbrand Award', description: 'Recognised as Consumer Validated Superbrand – India for 2017 and then for 4 consecutive years 2019, 2020, 2021, 2022 and 2023', years: '2017 to 2023', img: 'https://www.astralpipes.com/wp-content/uploads/2023/06/MicrosoftTeams-image-147.png' },

@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
         <div class="col-6 col-md-2 col-lg" *ngFor="let stat of stats; let i = index">
           <div class="bigNum" [class.animate]="isVisible" [style.animation-delay]="(i * 0.2) + 's'">
             <span class="counter">{{ stat.value }}</span>+ 
-            <span class="conterText">{{ stat.label }}</span>
+            <div><br><span class="conterText">{{ stat.label }}</span></div>
           </div>
         </div>
       </div>
@@ -19,11 +19,11 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [`
     .conterBox {
-      background: #f8f9fa;
+      //background: #f8f9fa;
       border-radius: 1rem;
-      padding: 3rem 2rem;
-      margin: 2rem auto;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 3rem 0rem;
+      //margin: 2rem auto;
+      //box-shadow: 0 2px 12px rgba(0,0,0,0.08);
       max-width: 1200px;
       display: flex;
       justify-content: center;
@@ -31,29 +31,30 @@ import { CommonModule } from '@angular/common';
     }
     
     .aboutCounterBox {
-      gap: 1rem;
-      align-items: center;
-      flex-wrap: nowrap;
-      justify-content: center;
-      width: 100%;
-      margin: 0 auto;
+      gap: 5rem;
+      // align-items: center;
+      // flex-wrap: nowrap;
+      // justify-content: center;
+      // width: 100%;
+      // margin: 0 auto;
     }
     
     .bigNum {
-      text-align: center;
+      //text-align: center;
       padding: 1.5rem 0.75rem;
       transition: all 0.3s ease;
-      background: #fff;
+      //background: #fff;
       border-radius: 0.75rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      //box-shadow: 0 2px 8px rgba(0,0,0,0.06);
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      //display: flex;
+      flex-direction: row;
       align-items: center;
+      justify-content: center;
       opacity: 1;
       transform: translateY(0);
       min-width: 120px;
+      gap: 0.5rem;
     }
     
     .bigNum.animate {
@@ -62,25 +63,20 @@ import { CommonModule } from '@angular/common';
     
     .bigNum:hover {
       transform: translateY(-5px);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      //box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     }
     
     .counter {
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: 700;
-      color: #1976d2;
-      display: block;
-      margin-bottom: 0.5rem;
+      color: #292f73;
+      display: inline-block;
       line-height: 1;
     }
     
     .conterText {
-      font-size: 0.85rem;
-      color: #555;
-      display: block;
-      font-weight: 500;
-      line-height: 1.3;
-      margin: 0;
+      font-size: 20px;
+      display: inline-block;
     }
     
     @keyframes fadeInUp {
