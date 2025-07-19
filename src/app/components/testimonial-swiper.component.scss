@@ -13,7 +13,7 @@
   margin: 0 auto;
 }
 .testimonial_section_heading {
-  color: #e30613;
+  color: #ee202e;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2rem;
@@ -123,14 +123,14 @@
   height: 12px;
   border-radius: 50%;
   border: none;
-  background: #e30613;
+  background: #ee202e;
   opacity: 0.4;
   cursor: pointer;
   transition: opacity 0.2s, background 0.2s;
 }
 .testimonial-dots button.active {
   opacity: 1;
-  background: #e30613;
+  background: #ee202e;
 }
 @media (max-width: 600px) {
   .testimonial-swiper-container {

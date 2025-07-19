@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
 }
 .plumbing-school-card {
   display: flex;
@@ -12,14 +11,11 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  max-width: 900px;
   width: 100%;
   overflow: hidden;
 }
 .plumbing-school-img {
-  flex: 1 1 320px;
-  min-width: 220px;
-  max-width: 400px;
+  flex: 1 1 50%;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -32,19 +28,19 @@
   display: block;
 }
 .plumbing-school-content {
-  flex: 2 1 400px;
+  flex: 2 1 50%;
   padding: 2rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .plumbing-school-title {
-  color: #e30613;
+  color: #ee202e;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 .plumbing-school-info {
-  color: #00aeef;
+  color: #292f73;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -53,19 +49,29 @@
   font-size: 1rem;
   margin-bottom: 1.5rem;
 }
-.btn-register.arrow {
-  background: #e30613;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s;
+.btn-register{
   display: inline-block;
-  margin-top: 1rem;
+  background: #3066e3;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top:16px;
+  border-radius: 30px;
+  text-decoration: none;
 }
+// .btn-register.arrow {
+//   background: #ee202e;
+//   color: #fff;
+//   border: none;
+//   border-radius: 4px;
+//   padding: 0.75rem 2rem;
+//   font-size: 1rem;
+//   font-weight: 600;
+//   text-decoration: none;
+//   transition: background 0.2s;
+//   display: inline-block;
+//   margin-top: 1rem;
+// }
 .btn-register.arrow:hover {
   background: #b8000a;
 }

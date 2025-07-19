@@ -1,0 +1,74 @@
+<div class="about-us-root">
+  <!-- Banner Section -->
+  <app-banner-section
+    [title]="bannerTitle"
+    [description]="bannerDescription"
+    [backgroundImage]="bannerImage">
+  </app-banner-section>
+
+  <!-- Info Highlights Section -->
+  <section class="ashirvad-infoHighlights py-80">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-up">
+        <div class="col-12 col-md-4" *ngFor="let card of infoCards">
+          <app-info-card [icon]="card.icon" [title]="card.title" [detail]="card.detail"></app-info-card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Innovations Section -->
+  <section class="ashirvad-innovations py-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 mx-auto" data-aos="fade-up">
+          <h2 class="headerTag text-center">Innovations & Inventions</h2>
+          <h6 class="subHeader text-center">
+            Innovation is the way of life for Ashirvad. From introducing 'The unique Wirelock™ system' in uPVC Column Pipes, to launching the Yellow Seal™ Technology in India for the first time, Ashirvad has always been at the forefront of technology.
+          </h6>
+        </div>
+      </div>
+      <div class="swipable-cards swipable_cards_ashirvad_innovations">
+        <!-- Swiper/Slider Placeholder -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper" data-aos="fade-up">
+            <app-innovation-card *ngFor="let innovation of innovations"
+              [img]="innovation.img"
+              [alt]="innovation.alt"
+              [title]="innovation.title"
+              [text]="innovation.text">
+            </app-innovation-card>
+          </div>
+          <!-- Swiper controls can be added here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="ashirvad-features bg-lightBlue py-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10" data-aos="fade-up">
+          <h2 class="headerTag text-left">Our Features</h2>
+          <h6 class="subHeader text-left">
+            Our product line has been enhanced over decades and provides efficient, sustainable, and innovative water management solutions by leveraging local and global knowledge continuously. Our endeavour for excellence is everlasting.
+          </h6>
+        </div>
+      </div>
+      <div class="swipable-cards swipable-cards-features">
+        <!-- Swiper/Slider Placeholder -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper" data-aos="fade-up">
+            <app-feature-card *ngFor="let feature of features"
+              [icon]="feature.icon"
+              [header]="feature.header"
+              [text]="feature.text">
+            </app-feature-card>
+          </div>
+          <!-- Swiper controls can be added here -->
+        </div>
+      </div>
+    </div>
+  </section>
+</div> 

@@ -1,0 +1,10 @@
+<h2>Product Details</h2>
+<app-tabbed-box
+  [tabs]="[
+    { label: 'Features & Benefits', content: '<p>All the key features and benefits of the product go here. This is a placeholder.</p>' },
+    { label: 'Standards & Specifications', content: '<p>Relevant standards and specifications for the product. This is a placeholder.</p>' },
+    { label: 'FAQs', content: '<p>Frequently asked questions about the product. This is a placeholder.</p>' }
+  ]"
+  [activeIndex]="0"
+  (tabChanged)="onTabChanged($event)">
+</app-tabbed-box>

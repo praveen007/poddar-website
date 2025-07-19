@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 export interface NavDropdownItem {
   label: string;
@@ -10,7 +11,7 @@ export interface NavDropdownItem {
 @Component({
   selector: 'app-nav-dropdown',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './nav-dropdown.component.html',
   styleUrls: ['./nav-dropdown.component.scss']
 })

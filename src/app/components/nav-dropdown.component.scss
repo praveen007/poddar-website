@@ -10,8 +10,8 @@
 }
 
 .nav-active {
-  border-bottom: 3px solid #00aeef;
-  color: #00aeef;
+  border-bottom: 3px solid #292f73;
+  color: #292f73;
 }
 
 .nav-link {
@@ -19,7 +19,6 @@
   text-decoration: none;
   cursor: pointer;
   font-size: 0.9rem;
-  color: #333;
   
   @media (min-width: 768px) {
     padding: 10px;
@@ -66,7 +65,7 @@
 
 .dropdown-item:hover {
   background-color: #eaf4ff;
-  color: #007bff;
+  color: #292f73;
 }
 
 /* Mobile-specific styles */

@@ -18,8 +18,8 @@ export class HeaderBottomComponent {
   isMobileMenu = false;
 
   aboutItems: NavDropdownItem[] = [
-    { label: 'Who we are', href: 'https://www.ashirvad.com/who-we-are/' },
-    { label: 'Why Ashirvad', href: 'https://www.ashirvad.com/about-us-why-ashirvad/' },
+    { label: 'Who we are', href: '/who-we-are' },
+    { label: 'Why Ashirvad', href: '/about-us' },
     { label: 'Our Partners', href: 'https://www.ashirvad.com/partners-and-growth/' },
     { label: 'Our Accomplishments', href: 'https://www.ashirvad.com/about-award-achievement/' },
     { label: 'Our Leadership', href: 'https://www.ashirvad.com/our-leadership/' }

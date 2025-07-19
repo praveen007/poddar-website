@@ -1,0 +1,15 @@
+<div class="tabbed-box">
+  <div class="tab-header">
+    <div
+      class="tab"
+      *ngFor="let tab of tabs; let i = index"
+      [class.active]="i === activeIndex"
+      (click)="selectTab(i)"
+    >
+      {{ tab.label }}
+    </div>
+  </div>
+  <div class="tab-body" *ngIf="tabs[activeIndex]">
+    <div [innerHTML]="tabs[activeIndex].content"></div>
+  </div>
+</div>

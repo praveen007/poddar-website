@@ -1,0 +1,50 @@
+<section class="products__solutions">
+  <div class="row">
+    <div class="col-12 col-md-8 col-lg-8 mx-auto text-center">
+      <div class="heading-wrapper">
+        <h2>Products and Solutions</h2>
+        <p>Ashirvad provides wide range of solutions for Building, Agriculture, Industrial and Infrastructure applications.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-12 col-lg-12">
+      <div class="service-tab-wrapper" data-aos="fade-up">
+        <div class="products-tabs-wrap">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" *ngFor="let tab of tabs; let i = index">
+              <a class="nav-link" [class.active]="activeTab === i" (click)="setActiveTab(i)" role="tab">
+                <h3>{{ tab.label }}</h3>
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" role="tablist">
+            <div class="card tab-pane fade show active" *ngIf="tabs[activeTab]">
+              <div class="card-header" role="tab">
+                <h4 class="mb-0">
+                  <a>
+                    {{ tabs[activeTab].label }}
+                  </a>
+                </h4>
+              </div>
+              <div class="collapse tabs-effect show" role="tabpanel">
+                <div class="card-body">
+                  <div class="service-content">
+                    <div class="contents-wrap">
+                      <img class="tab-img" [src]="tabs[activeTab].img" [alt]="tabs[activeTab].label" />
+                      <div class="contents-bottom">
+                        <div class="contents w-100">
+                          <p>{{ tabs[activeTab].text }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 

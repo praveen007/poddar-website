@@ -1,9 +1,10 @@
 .navHeader__wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100%;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  z-index: 100;
-  position: relative;
+  //box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 
   .container {
     max-width: 1200px;
@@ -11,7 +12,7 @@
     padding: 0 1rem;
     
     @media (min-width: 768px) {
-      padding: 0 1.5rem;
+      //padding: 0 1.5rem;
     }
   }
 }
@@ -262,7 +263,7 @@
 
 .navHeader--title:hover,
 .navHeader__itemList.active .navHeader--title {
-  background: #e30613;
+  background: #ee202e;
   color: #fff;
 }
 
@@ -481,7 +482,7 @@
   transition: color 0.2s;
 }
 .navHeader__innerListItem a:hover {
-  color: #e30613;
+  color: #ee202e;
 }
 /* Mega menu columns */
 .row.height-fix {
@@ -509,7 +510,7 @@
 .list-heading {
   font-size: 1.05rem;
   font-weight: 600;
-  color: #e30613;
+  color: #ee202e;
   margin: 1rem 0 0.5rem 0;
 }
 .cardtwo {
@@ -526,7 +527,7 @@
 }
 .cardtwo:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  color: #e30613;
+  color: #ee202e;
 }
 .image-container {
   width: 60px;
