@@ -1,0 +1,58 @@
+// Main page styles
+:host {
+  display: block;
+}
+
+// Ensure proper spacing between sections
+app-banner-section,
+app-technical-calculation,
+app-bim-cad {
+  display: block;
+}
+
+// Global styles for the page
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-12,
+.col-md-12,
+.col-lg-5,
+.col-lg-6 {
+  padding: 0 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .offset-lg-1 {
+    margin-left: 8.333333%;
+  }
+}
+
+// Utility classes
+.bg-black {
+  background-color: #000;
+}
+
+.bg-lightBlue {
+  background-color: #f8f9fa;
+} 

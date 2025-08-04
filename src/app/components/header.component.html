@@ -2,12 +2,30 @@
     <div class="container">
       <div class="navHeader__topLayer">
         <a class="navHeader__logoWrapper" href="/">
-          <img alt="ashirvad--logo" class="navHeader__logoImg" src="assets/poddar/poddar-logo.png" />
+          <img alt="ashirvad--logo" class="navHeader__logoImg" src="assets/poddar/poddar-logo-new.png" />
         </a>
-        <app-header-bottom [mobileMenuOpen]="mobileMenuOpen" (closeMobileMenu)="closeMobileMenu()"></app-header-bottom>
+        
+        <!-- Desktop Navigation -->
+        <div class="navHeader__desktop">
+          <app-header-bottom [mobileMenuOpen]="false" (closeMobileMenu)="closeMobileMenu()"></app-header-bottom>
+        </div>
+        
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" [class.active]="mobileMenuOpen" (click)="toggleMobileMenu()" aria-label="Toggle mobile menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" [class.active]="mobileMenuOpen" *ngIf="isMobileView">
+      <div class="mobile-menu-content">
+        <app-header-bottom [mobileMenuOpen]="true" (closeMobileMenu)="closeMobileMenu()"></app-header-bottom>
       </div>
     </div>
     
     <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" [class.active]="mobileMenuOpen" (click)="closeMobileMenu()"></div>
+    <div class="mobile-menu-overlay" [class.active]="mobileMenuOpen" (click)="closeMobileMenu()" *ngIf="isMobileView"></div>
   </div>

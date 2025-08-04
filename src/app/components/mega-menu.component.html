@@ -42,7 +42,9 @@
       <div *ngFor="let item of activeItems" class="item">
         <div class="item-title">
           <img *ngIf="item.image" [src]="item.image" alt="" />
-          <a [href]="item.url">{{ item.title }}</a>
+          <a [routerLink]="item.url.startsWith('http') ? null : item.url"
+             [href]="item.url.startsWith('http') ? item.url : null"
+             [attr.target]="item.target || null">{{ item.title }}</a>
         </div>
       </div>
     </div>

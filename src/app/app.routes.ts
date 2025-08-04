@@ -10,10 +10,21 @@ export const routes: Routes = [
   {
     path: 'who-we-are',
     loadComponent: () => import('./components/who-we-are/who-we-are.component').then(m => m.WhoWeAreComponent)
-  }
-  ,
+  },
   {
     path: 'products',
     loadComponent: () => import('./components/products/products.component').then(m => m.ProductsComponent)
+  },
+  {
+    path: 'design-and-specifications',
+    loadComponent: () => import('./features/design-specifications/design-specifications-page.component').then(m => m.DesignSpecificationsPageComponent)
+  },
+  {
+    path: 'installation-and-services',
+    loadComponent: () => import('./features/installation-training/installation-training-page.component').then(m => m.InstallationTrainingPageComponent)
+  },
+  {
+    path: 'contact-us',
+    loadComponent: () => import('./features/contact/contact-page.component').then(m => m.ContactPageComponent)
   }
 ];

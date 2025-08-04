@@ -12,7 +12,11 @@
     padding: 0 1rem;
     
     @media (min-width: 768px) {
-      //padding: 0 1.5rem;
+      padding: 0 1.5rem;
+    }
+    
+    @media (max-width: 480px) {
+      padding: 0 0.75rem; // Less padding on very small screens
     }
   }
 }
@@ -21,22 +25,146 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 0;
+  padding: 0.5rem 0; // Add some padding for mobile
   
   @media (min-width: 768px) {
-    padding: 1rem 0;
+    padding: 0.75rem 0; // More padding on desktop
   }
-
+  
   .navHeader__logoWrapper {
     display: flex;
     align-items: center;
+    flex-shrink: 0; // Prevent logo from shrinking
+    margin-right: auto; // Push logo to the left
+    
     img.navHeader__logoImg {
-      height: 36px;
+      height: 50px; // Mobile size
       width: auto;
+      max-width: 200px; // Prevent overflow on very small screens
+      object-fit: contain; // Maintain aspect ratio
       
       @media (min-width: 768px) {
-        height: 48px;
+        height: 70px; // Desktop size
+        max-width: none; // Remove max-width constraint on larger screens
       }
+      
+      @media (max-width: 480px) {
+        height: 40px; // Extra small screens
+        max-width: 150px;
+      }
+    }
+  }
+  
+  // Desktop Navigation
+  .navHeader__desktop {
+    display: none;
+    
+    @media (min-width: 768px) {
+      display: block;
+    }
+    
+    // Hide the bottom layer background on desktop since it's integrated into top layer
+    .navHeader__bottomLayer {
+      background: none;
+      border-bottom: none;
+      box-shadow: none;
+      min-height: auto;
+    }
+  }
+  
+  // Hamburger Button
+  .hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    flex-shrink: 0; // Prevent hamburger from shrinking
+    margin-left: auto; // Push hamburger to the right
+    
+    @media (min-width: 768px) {
+      display: none; // Hide on desktop
+    }
+    
+    .hamburger-line {
+      width: 100%;
+      height: 3px;
+      background-color: #333;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    
+    &.active {
+      .hamburger-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .hamburger-line:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+  
+  // Mobile Menu
+  .navHeader__wrapper .mobile-menu {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    height: 100vh !important;
+    background: white !important;
+    z-index: 1000 !important;
+    transform: translateX(100%) !important; // Start off-screen
+    transition: transform 0.3s ease !important;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1) !important;
+    display: block !important; // Always show for testing
+    
+    &.active {
+      transform: translateX(0) !important; // Slide in when active
+    }
+    
+    .mobile-menu-content {
+      padding: 80px 20px 20px;
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+  
+  // Mobile Menu Overlay
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    display: none; // Hide by default
+    
+    @media (max-width: 767px) {
+      display: block; // Show on mobile only
+    }
+    
+    @media (min-width: 768px) {
+      display: none !important; // Force hide on desktop
+    }
+    
+    &.active {
+      opacity: 1;
+      visibility: visible;
     }
   }
 
@@ -577,3 +705,5 @@
     visibility: visible;
   }
 }
+
+

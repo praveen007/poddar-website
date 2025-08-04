@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 export interface MegaMenuItem {
   category: string;
@@ -18,7 +19,7 @@ export interface MegaMenuColumn {
 @Component({
   selector: 'app-mega-menu',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './mega-menu.component.html',
   styleUrls: ['./mega-menu.component.scss']
 })

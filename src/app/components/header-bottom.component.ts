@@ -25,18 +25,18 @@ export class HeaderBottomComponent {
     { label: 'Our Leadership', href: 'https://www.ashirvad.com/our-leadership/' }
   ];
   servicesItems: NavDropdownItem[] = [
-    { label: 'Design & Specification', href: 'https://www.ashirvad.com/design-and-specifications/' },
-    { label: 'Installation & Training', href: 'https://www.ashirvad.com/installation-and-services/' }
+    { label: 'Design & Specification', href: '/design-and-specifications' },
+    { label: 'Installation & Training', href: '/installation-and-services' }
   ];
   careersItems: NavDropdownItem[] = [
-    { label: 'Life at Ashirvad', href: 'https://www.ashirvad.com/life-at-ashirvad/' },
+    { label: 'Life at Ashirvad', href: '/life-at-ashirvad/' },
     { label: 'Opportunities', href: 'https://aliaxis.wd3.myworkdayjobs.com/Aliaxis_IndiaAshirvad1', target: '_blank' },
-    { label: 'Why Ashirvad', href: 'https://www.ashirvad.com/why-ashirvad/' }
+    { label: 'Why Ashirvad', href: '/why-ashirvad/' }
   ];
   resourcesItems: NavDropdownItem[] = [
-    { label: 'Blogs', href: 'https://www.ashirvad.com/blogs/' },
-    { label: 'Case studies', href: 'https://www.ashirvad.com/case-study/' },
-    { label: 'Downloads', href: 'https://www.ashirvad.com/downloads/' }
+    { label: 'Blogs', href: '/blogs/' },
+    { label: 'Case studies', href: '/case-study/' },
+    { label: 'Downloads', href: '/downloads/' }
   ];
 
   productsColumns: MegaMenuItem[] = [

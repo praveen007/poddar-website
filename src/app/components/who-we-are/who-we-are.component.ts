@@ -24,7 +24,7 @@ export class WhoWeAreComponent {
     leftText: 'Ashirvad Pipes has been the benchmark of quality in the Indian water management industry since 1998. We adhere to the highest international standards set for manufacturing products for potable water supply through smart solutions and intelligent technologies that ensure sustainability and convenience.',
     rightTitle: 'Aliaxis - A Reputation for Excellence',
     rightText: 'Headquartered in Belgium, Aliaxis has earned the distinction of providing the finest integrated & sustainable fluid handling systems across the globe. Our best practices include deploying environment-friendly technology, using non-toxic raw material, and reducing the carbon footprint in a conscious and conscientious way. Our group is deeply committed to grow Ashirvad Pipes in India.',
-    logo: 'assets/poddar/poddar-logo.png'
+    logo: 'assets/poddar/poddar-logo-new.png'
   };
 
   missionVisionCards = [

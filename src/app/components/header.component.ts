@@ -31,7 +31,22 @@ export class HeaderComponent {
   }
 
   toggleMobileMenu() {
+    console.log('Toggle mobile menu clicked, current state:', this.mobileMenuOpen);
     this.mobileMenuOpen = !this.mobileMenuOpen;
+    console.log('New state:', this.mobileMenuOpen);
+    
+    // Use setTimeout to check after Angular has updated the DOM
+    setTimeout(() => {
+      const mobileMenu = document.querySelector('.mobile-menu');
+      console.log('Mobile menu element:', mobileMenu);
+      console.log('Active class applied:', mobileMenu?.classList.contains('active'));
+      console.log('All classes:', mobileMenu?.className);
+      if (mobileMenu) {
+        console.log('Computed transform:', window.getComputedStyle(mobileMenu).transform);
+        console.log('Mobile menu visible:', (mobileMenu as HTMLElement).offsetWidth > 0);
+      }
+    }, 0);
+    
     // Prevent body scroll when mobile menu is open
     if (this.mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -70,6 +85,13 @@ export class HeaderComponent {
   // Detect mobile width for click/tap logic
   get isMobile() {
     return window.innerWidth <= 900;
+  }
+
+  // Detect mobile view for conditional rendering
+  get isMobileView() {
+    const isMobile = window.innerWidth <= 767;
+    console.log('Window width:', window.innerWidth, 'Is mobile:', isMobile);
+    return isMobile;
   }
 
   // onResize logic can be handled in the parent or elsewhere if needed
