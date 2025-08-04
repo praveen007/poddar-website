@@ -4,7 +4,7 @@ import { HeroSectionComponent } from './hero-section.component';
 import { SectionTitleComponent } from '../../shared/section-title.component';
 import { TeamGridComponent } from './team-grid.component';
 import { TestimonialSliderComponent } from './testimonial-slider.component';
-import { ContactCtaComponent } from './contact-cta.component';
+
 import { AboutStatsCounterComponent } from './about-stats-counter.component';
 import { AwardsSwiperComponent } from '../../components/awards-swiper.component';
 import { MilestoneSwiperComponent } from '../../components/milestone-swiper.component';
@@ -20,7 +20,6 @@ import { MilestoneSwiperComponent } from '../../components/milestone-swiper.comp
     SectionTitleComponent,
     TeamGridComponent,
     TestimonialSliderComponent,
-    //ContactCtaComponent,
     AboutStatsCounterComponent,
     AwardsSwiperComponent,
     MilestoneSwiperComponent

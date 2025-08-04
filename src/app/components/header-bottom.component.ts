@@ -1,12 +1,13 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { NavDropdownComponent, NavDropdownItem } from './nav-dropdown.component';
 import { MegaMenuComponent, MegaMenuColumn, MegaMenuItem } from './mega-menu.component';
 
 @Component({
   selector: 'app-header-bottom',
   standalone: true,
-  imports: [CommonModule, NavDropdownComponent, MegaMenuComponent],
+  imports: [CommonModule, RouterModule, NavDropdownComponent, MegaMenuComponent],
   templateUrl: './header-bottom.component.html',
   styleUrls: ['./header-bottom.component.scss']
 })
@@ -18,20 +19,20 @@ export class HeaderBottomComponent {
   isMobileMenu = false;
 
   aboutItems: NavDropdownItem[] = [
-    { label: 'Who we are', href: '/who-we-are' },
+    { label: 'Who we are', href: '/about-us' },
     { label: 'Why Ashirvad', href: '/about-us' },
-    { label: 'Our Partners', href: 'https://www.ashirvad.com/partners-and-growth/' },
-    { label: 'Our Accomplishments', href: 'https://www.ashirvad.com/about-award-achievement/' },
-    { label: 'Our Leadership', href: 'https://www.ashirvad.com/our-leadership/' }
+    { label: 'Our Partners', href: '/about-us' },
+    { label: 'Our Accomplishments', href: '/about-us' },
+    { label: 'Our Leadership', href: '/about-us' }
   ];
   servicesItems: NavDropdownItem[] = [
     { label: 'Design & Specification', href: '/design-and-specifications' },
     { label: 'Installation & Training', href: '/installation-and-services' }
   ];
   careersItems: NavDropdownItem[] = [
-    { label: 'Life at Poddar', href: 'https://www.ashirvad.com/life-at-ashirvad/' },
-    { label: 'Opportunities', href: 'https://aliaxis.wd3.myworkdayjobs.com/Aliaxis_IndiaAshirvad1', target: '_blank' },
-    { label: 'Why Poddar', href: 'https://www.ashirvad.com/why-ashirvad/' }
+    { label: 'Life at Poddar', href: '/life-at-poddar' },
+    { label: 'Opportunities', href: '#' },
+    { label: 'Why Poddar', href: '/why-poddar' }
   ];
   resourcesItems: NavDropdownItem[] = [
     { label: 'Blogs', href: '/blogs/' },

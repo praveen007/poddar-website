@@ -1,0 +1,472 @@
+
+
+// Banner Section Styles
+.banner__wrapper {
+  position: relative;
+  overflow: hidden;
+  
+  .banner-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
+  
+  .banner_contents_wrapper {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    
+    .container {
+      height: 100%;
+    }
+  }
+  
+  .breadcrumb__wrapper {
+    padding-top: 2rem;
+    
+    .breadcrumb {
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      
+      .breadcrumb-item {
+        color: #fff;
+        
+        a {
+          color: #fff;
+          text-decoration: none;
+          
+          &:hover {
+            color: #ddd;
+          }
+        }
+        
+        &.active {
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  
+  .banner_contents {
+    text-align: center;
+    color: #fff;
+    
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+      
+      @media (max-width: 576px) {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  .circle {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Culture and Values Section
+.ashirvad-infoHighlights {
+  background: #f8f9fa;
+  
+  .swiper-container {
+    overflow: hidden;
+    
+    .swiper-wrapper {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+    
+    .swiper-slide {
+      flex-shrink: 0;
+    }
+  }
+  
+  .ashirvad-info-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .ashirvad-info-icon {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+      }
+    }
+    
+    .ashirvad-info-header {
+      color: #2c3e50;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .car-bulletsPoint {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: #555;
+        line-height: 1.6;
+        
+        &::before {
+          content: '✓';
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: #28a745;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  .swiper-controls-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 40px;
+      height: 40px;
+      background: #007bff;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+      &:hover {
+        background: #0056b3;
+      }
+      
+      &.swiper-button-disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+    }
+    
+    .swiper-pagination {
+      margin: 0 1rem;
+      
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: #ddd;
+        border-radius: 50%;
+        margin: 0 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        
+        &.swiper-pagination-bullet-active {
+          background: #007bff;
+        }
+      }
+    }
+  }
+}
+
+// Programs Section
+.ashirvad-programs {
+  .text-Blue {
+    color: #007bff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  
+  .program-cards {
+    margin-bottom: 4rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    &.bg-lightBlue {
+      background: #e3f2fd;
+      border-radius: 15px;
+      padding: 3rem 0;
+    }
+    
+    .row {
+      align-items: center;
+    }
+    
+    .program-cards-content {
+      padding: 2rem;
+      
+      .campus-cards-header {
+        color: #2c3e50;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+      
+      p {
+        color: #555;
+        line-height: 1.8;
+        font-size: 1.1rem;
+        margin: 0;
+      }
+    }
+    
+    .program-cards-img-wrapper {
+      text-align: center;
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+// Utility Classes
+.py-80 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  
+  @media (max-width: 768px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+// Responsive Design
+@media (max-width: 992px) {
+  .order-md-1 {
+    order: 1;
+  }
+  
+  .order-md-2 {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-1 {
+    order: 1;
+  }
+  
+  .order-2 {
+    order: 2;
+  }
+  
+  .d-lg-none {
+    display: block;
+  }
+  
+  .d-block {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .d-lg-none {
+    display: none;
+  }
+}
+
+// Animation Classes
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  
+  &.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Bootstrap Grid System (if not already included)
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .col-md-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Additional utility classes
+.bg-lightBlue {
+  background-color: #e3f2fd;
+}
+
+.text-Blue {
+  color: #007bff;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.h5 {
+  font-size: 1.25rem;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+} 

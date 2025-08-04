@@ -30,5 +30,9 @@ export const routes: Routes = [
   {
     path: 'life-at-poddar',
     loadComponent: () => import('./features/careers/life-at-poddar.component').then(m => m.LifeAtPoddarComponent)
+  },
+  {
+    path: 'why-poddar',
+    loadComponent: () => import('./components/why-poddar/why-poddar.component').then(m => m.WhyPoddarComponent)
   }
 ];

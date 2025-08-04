@@ -1,0 +1,92 @@
+
+
+<!-- Banner Section -->
+<section class="banner__wrapper about__award__achievement__banner">
+  <div class="banner-bg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="banner_contents_wrapper">
+      <div class="container h-100">
+        <nav class="breadcrumb__wrapper" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item disabled"><a href="javascript:void(0):">Careers</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Why Poddar</li>
+          </ol>
+        </nav>
+        <div class="row align-items-center h-90">
+          <div class="col-12 col-md-11 col-lg-10 mx-auto">
+            <div class="banner_contents">
+              <h1>Our Culture and Values</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="circle">
+    <svg viewBox="0 0 100 6.1">
+      <path d="M 0 10, 0 0 q 50 12.2 100 0, 100 10, 0 10" stroke="none" stroke-width="1" fill="#000000"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- Our Culture and Values Section -->
+<section style="background: #f8f9fa; padding: 2rem 0;">
+
+  
+  <div class="container">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+              <div *ngFor="let value of cultureValues" style="width: 350px; background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); min-height: 300px;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+          <div style="width: 80px; height: 80px; background: #007bff; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">{{ value.title.charAt(0) }}</div>
+        </div>
+        <h3 style="color: #2c3e50; font-size: 1.5rem; font-weight: 600; text-align: center; margin-bottom: 1.5rem;">{{ value.title }}</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li *ngFor="let point of value.points" style="position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #555; line-height: 1.6;">
+            <span style="position: absolute; left: 0; top: 0; color: #28a745; font-weight: bold;">✓</span>
+            {{ point }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Diversity & Inclusion Section -->
+<section style="padding: 2rem 0;">
+
+  
+  <h2 style="color: #007bff; font-size: 2.5rem; font-weight: 700; margin-bottom: 3rem; text-align: center;">Diversity & Inclusion</h2>
+  
+  <!-- Purpose, Vision, Mission Sections -->
+  <div class="container" *ngFor="let item of purposeVisionMission" style="margin-bottom: 2rem;">
+    <div style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+      <div style="display: flex; flex-wrap: wrap; align-items: center;">
+        <!-- Image Section -->
+        <div style="flex: 1; min-width: 300px; padding: 1rem;" [ngStyle]="{'order': item.imageFirst ? '1' : '2'}">
+          <img [src]="item.image" [alt]="item.title" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;" />
+        </div>
+        <!-- Content Section -->
+        <div style="flex: 1; min-width: 300px; padding: 1rem;" [ngStyle]="{'order': item.imageFirst ? '2' : '1'}">
+          <h2 style="color: #2c3e50; font-size: 2rem; font-weight: 600; margin-bottom: 1.5rem;">{{ item.title }}</h2>
+          <p style="color: #555; line-height: 1.8; font-size: 1.1rem; margin: 0;">{{ item.content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Great Place to Work Section -->
+<section style="background: #e3f2fd; padding: 2rem 0;">
+
+  
+  <div class="container">
+    <div style="display: flex; flex-wrap: wrap; align-items: center;">
+      <div style="flex: 1; min-width: 300px; padding: 1rem;">
+        <img [src]="greatPlaceToWork.image" [alt]="greatPlaceToWork.title" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;" />
+      </div>
+      <div style="flex: 1; min-width: 300px; padding: 1rem;">
+        <h2 style="color: #007bff; font-size: 2rem; font-weight: 600; margin-bottom: 1.5rem;">{{ greatPlaceToWork.title }}</h2>
+        <p style="color: #555; line-height: 1.8; font-size: 1.1rem; margin: 0;">{{ greatPlaceToWork.content }}</p>
+      </div>
+    </div>
+  </div>
+</section> 
