@@ -29,9 +29,9 @@ export class HeaderBottomComponent {
     { label: 'Installation & Training', href: '/installation-and-services' }
   ];
   careersItems: NavDropdownItem[] = [
-    { label: 'Life at Ashirvad', href: '/life-at-ashirvad/' },
+    { label: 'Life at Poddar', href: 'https://www.ashirvad.com/life-at-ashirvad/' },
     { label: 'Opportunities', href: 'https://aliaxis.wd3.myworkdayjobs.com/Aliaxis_IndiaAshirvad1', target: '_blank' },
-    { label: 'Why Ashirvad', href: '/why-ashirvad/' }
+    { label: 'Why Poddar', href: 'https://www.ashirvad.com/why-ashirvad/' }
   ];
   resourcesItems: NavDropdownItem[] = [
     { label: 'Blogs', href: '/blogs/' },

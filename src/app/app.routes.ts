@@ -26,5 +26,9 @@ export const routes: Routes = [
   {
     path: 'contact-us',
     loadComponent: () => import('./features/contact/contact-page.component').then(m => m.ContactPageComponent)
+  },
+  {
+    path: 'life-at-poddar',
+    loadComponent: () => import('./features/careers/life-at-poddar.component').then(m => m.LifeAtPoddarComponent)
   }
 ];
